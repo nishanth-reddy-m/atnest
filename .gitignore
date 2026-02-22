@@ -1,0 +1,26 @@
+# Dependencies
+/node_modules
+
+# Build
+/dist
+/out-tsc
+*.tsbuildinfo
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Test
+/coverage
+
+# Misc
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
