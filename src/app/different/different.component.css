@@ -2,7 +2,7 @@
   background: var(--atnest-bg);
   position: relative;
   overflow: hidden;
-  min-height: 400px;
+  min-height: 600px;
 }
 
 .different__inner {

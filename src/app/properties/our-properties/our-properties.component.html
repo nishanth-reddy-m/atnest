@@ -1,0 +1,105 @@
+<section class="our-properties" id="properties" aria-label="Our Properties">
+  <div class="our-properties__decor" aria-hidden="true">
+    <img class="our-properties__decor-item our-properties__decor-item--1" src="assets/icons/properties/deco-1.svg" alt="" />
+    <img class="our-properties__decor-item our-properties__decor-item--2" src="assets/icons/properties/deco-2.svg" alt="" />
+    <img class="our-properties__decor-item our-properties__decor-item--3" src="assets/icons/properties/deco-3.svg" alt="" />
+    <img class="our-properties__decor-item our-properties__decor-item--4" src="assets/icons/properties/deco-4.svg" alt="" />
+  </div>
+
+  <div class="our-properties__inner">
+    <div class="our-properties__top">
+      <div class="our-properties__heading">
+        <div class="our-properties__hot-picks">
+          <span class="our-properties__hot-picks-dot" aria-hidden="true"></span>
+          <span class="our-properties__hot-picks-text">Hot Picks</span>
+        </div>
+
+        <div class="our-properties__hex">
+          <img class="our-properties__hex-bg" [src]="hexHeadingSrc" alt="" aria-hidden="true" />
+          <img class="our-properties__hex-icon" [src]="hexHomeSrc" alt="" aria-hidden="true" />
+        </div>
+
+        <h2 class="our-properties__title">Our <span class="our-properties__title-accent">Properties</span></h2>
+        <img class="our-properties__underline" [src]="underlineSrc" alt="" aria-hidden="true" />
+
+        <p class="our-properties__subtitle">
+          Handpicked premium accommodations that define luxury and comfort. Experience the best of &#64;nest.
+        </p>
+      </div>
+
+      <button type="button" class="our-properties__cta">
+        <span>Explore All</span>
+        <span class="our-properties__cta-arrow" aria-hidden="true">→</span>
+      </button>
+    </div>
+
+    <div class="our-properties__grid">
+      <article class="property-card" *ngFor="let card of cards">
+        <div class="property-card__media">
+          <img class="property-card__img" [src]="card.imageSrc" alt="" />
+
+          <div class="property-card__category">{{ card.category | uppercase }}</div>
+
+          <div class="property-card__actions" aria-hidden="true">
+            <div class="property-card__action">♡</div>
+            <div class="property-card__action">⤴</div>
+          </div>
+
+          <div class="property-card__rating">
+            <span class="property-card__rating-star">★</span>
+            <span class="property-card__rating-value">{{ card.rating }}</span>
+            <span class="property-card__rating-count">{{ card.ratingCount }}</span>
+          </div>
+        </div>
+
+        <div class="property-card__body">
+          <div class="property-card__meta">
+            <div class="property-card__meta-left">
+              <span class="property-card__pin" aria-hidden="true">•</span>
+              <span class="property-card__meta-text">{{ card.location | uppercase }}</span>
+            </div>
+            <div class="property-card__meta-right">
+              <span class="property-card__sqft-icon" aria-hidden="true">⌁</span>
+              <span class="property-card__meta-text">{{ card.sqft }}</span>
+            </div>
+          </div>
+
+          <h3 class="property-card__title">{{ card.title }}</h3>
+
+          <div class="property-card__tags">
+            <span class="property-card__tag" *ngFor="let t of card.bedTags">{{ t }}</span>
+          </div>
+
+          <div class="property-card__amenities">
+            <img class="property-card__amenity" src="assets/icons/properties/amenity-1.svg" alt="" aria-hidden="true" />
+            <img class="property-card__amenity" src="assets/icons/properties/amenity-2.svg" alt="" aria-hidden="true" />
+            <img class="property-card__amenity" src="assets/icons/properties/amenity-3.svg" alt="" aria-hidden="true" />
+            <img class="property-card__amenity" src="assets/icons/properties/amenity-4.svg" alt="" aria-hidden="true" />
+            <img class="property-card__amenity" src="assets/icons/properties/amenity-5.svg" alt="" aria-hidden="true" />
+            <img class="property-card__amenity" src="assets/icons/properties/amenity-6.svg" alt="" aria-hidden="true" />
+          </div>
+
+          <div class="property-card__divider" aria-hidden="true"></div>
+
+          <div class="property-card__footer">
+            <div class="property-card__price">
+              <div class="property-card__price-label">Starts from</div>
+              <div class="property-card__price-row">
+                <span class="property-card__price-value">{{ card.priceFrom }}</span>
+                <span class="property-card__price-suffix">/ {{ card.priceSuffix }}</span>
+              </div>
+            </div>
+
+            <button type="button" class="property-card__details">Details <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="our-properties__dots" aria-hidden="true">
+      <span class="our-properties__dot"></span>
+      <span class="our-properties__dot our-properties__dot--active"></span>
+      <span class="our-properties__dot"></span>
+    </div>
+  </div>
+</section>
