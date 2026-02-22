@@ -1,0 +1,31 @@
+<header class="header" aria-label="ATNEST header">
+  <div class="header__container">
+    <a class="header__logo" href="#" aria-label="ATNEST">
+      <img class="header__logo-img" [src]="logoSrc" alt="ATNEST" />
+    </a>
+
+    <nav class="header__nav" aria-label="Primary">
+      <a
+        *ngFor="let link of navLinks"
+        class="header__nav-link"
+        [class.header__nav-link--active]="link.active"
+        [href]="link.href"
+        >
+        <span class="header__nav-text">{{ link.label }}</span>
+        <span class="header__nav-underline" aria-hidden="true"></span>
+      </a>
+    </nav>
+
+    <div class="header__actions">
+      <button type="button" class="header__action header__action--ghost">
+        <img class="header__action-icon" [src]="searchIconSrc" alt="" aria-hidden="true" />
+        <span class="header__action-text">Search</span>
+      </button>
+
+      <a class="header__action header__action--primary" href="#">
+        <img class="header__action-icon" [src]="loginIconSrc" alt="" aria-hidden="true" />
+        <span class="header__action-text">Login</span>
+      </a>
+    </div>
+  </div>
+</header>

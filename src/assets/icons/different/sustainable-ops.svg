@@ -1,0 +1,18 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<path id="Vector" d="M40 68C41.3333 54.6667 41.3333 42.6667 40 32" stroke="var(--stroke-0, #F26622)" stroke-width="0.8"/>
+<path id="Vector_2" opacity="0.3" d="M40 40C53.3333 37.3333 60 32 60 24C60 18.6667 57.3333 16 52 16C46.6667 16 42.6667 18.6667 40 24V40Z" fill="var(--fill-0, #F26622)"/>
+<path id="Vector_3" d="M40 40C53.3333 37.3333 60 32 60 24C60 18.6667 57.3333 16 52 16C46.6667 16 42.6667 18.6667 40 24" stroke="var(--stroke-0, #F26622)" stroke-width="0.6"/>
+<path id="Vector_4" opacity="0.4" d="M42 34C46 31.3333 50 28.6667 54 26" stroke="var(--stroke-0, #F26622)" stroke-width="0.4"/>
+<path id="Vector_5" opacity="0.3" d="M40 56C26.6667 53.3333 20 48 20 40C20 34.6667 22.6667 32 28 32C33.3333 32 37.3333 34.6667 40 40V56Z" fill="var(--fill-0, #F26622)"/>
+<path id="Vector_6" d="M40 56C26.6667 53.3333 20 48 20 40C20 34.6667 22.6667 32 28 32C33.3333 32 37.3333 34.6667 40 40" stroke="var(--stroke-0, #F26622)" stroke-width="0.6"/>
+<path id="Vector_7" opacity="0.4" d="M38 50C34 47.3333 30 44.6667 26 42" stroke="var(--stroke-0, #F26622)" stroke-width="0.4"/>
+<g id="Group">
+<path id="Vector_8" opacity="0.5" d="M58 52H62L60 56L58 52Z" fill="var(--fill-0, #F26622)"/>
+<path id="Vector_9" opacity="0.5" d="M62 56V60L58 58L62 56Z" fill="var(--fill-0, #F26622)"/>
+<path id="Vector_10" opacity="0.5" d="M58 60H54L56 56L58 60Z" fill="var(--fill-0, #F26622)"/>
+</g>
+<path id="Vector_11" opacity="0.491334" d="M28.0004 21.6C28.884 21.6 29.6004 20.8837 29.6004 20C29.6004 19.1164 28.884 18.4 28.0004 18.4C27.1167 18.4 26.4004 19.1164 26.4004 20C26.4004 20.8837 27.1167 21.6 28.0004 21.6Z" fill="var(--fill-0, #F26622)"/>
+<path id="Vector_12" opacity="0.69495" d="M51.9988 21.1999C52.6616 21.1999 53.1988 20.6627 53.1988 19.9999C53.1988 19.3372 52.6616 18.7999 51.9988 18.7999C51.3361 18.7999 50.7988 19.3372 50.7988 19.9999C50.7988 20.6627 51.3361 21.1999 51.9988 21.1999Z" fill="var(--fill-0, #F26622)"/>
+</g>
+</svg>

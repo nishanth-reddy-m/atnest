@@ -1,0 +1,18 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<path id="Vector" opacity="0.4" d="M39.9988 35.1999C43.9753 35.1999 47.1988 31.9764 47.1988 27.9999C47.1988 24.0235 43.9753 20.7999 39.9988 20.7999C36.0224 20.7999 32.7988 24.0235 32.7988 27.9999C32.7988 31.9764 36.0224 35.1999 39.9988 35.1999Z" fill="var(--fill-0, #F26622)"/>
+<path id="Vector_2" d="M40 34C43.3137 34 46 31.3137 46 28C46 24.6863 43.3137 22 40 22C36.6863 22 34 24.6863 34 28C34 31.3137 36.6863 34 40 34Z" fill="var(--fill-0, white)" stroke="var(--stroke-0, #F26622)" stroke-width="0.6"/>
+<path id="Vector_3" opacity="0.3" d="M30 48V42C30 38 34 36 40 36C46 36 50 38 50 42V48" fill="var(--fill-0, #F26622)"/>
+<path id="Vector_4" d="M30 48V42C30 38 34 36 40 36C46 36 50 38 50 42V48" stroke="var(--stroke-0, #F26622)" stroke-width="0.6"/>
+<path id="Vector_5" opacity="0.3" d="M18.0012 40.8001C20.6521 40.8001 22.8012 38.651 22.8012 36.0001C22.8012 33.3491 20.6521 31.2001 18.0012 31.2001C15.3502 31.2001 13.2012 33.3491 13.2012 36.0001C13.2012 38.651 15.3502 40.8001 18.0012 40.8001Z" fill="var(--fill-0, #F26622)"/>
+<path id="Vector_6" d="M18 40C20.2091 40 22 38.2091 22 36C22 33.7909 20.2091 32 18 32C15.7909 32 14 33.7909 14 36C14 38.2091 15.7909 40 18 40Z" fill="var(--fill-0, white)" stroke="var(--stroke-0, #F26622)" stroke-width="0.4"/>
+<path id="Vector_7" opacity="0.5" d="M12 52V48C12 45.2 14.4 44 18 44C21.6 44 24 45.2 24 48V52" stroke="var(--stroke-0, #F26622)" stroke-width="0.4"/>
+<path id="Vector_8" opacity="0.3" d="M62.0012 40.8001C64.6521 40.8001 66.8012 38.651 66.8012 36.0001C66.8012 33.3491 64.6521 31.2001 62.0012 31.2001C59.3502 31.2001 57.2012 33.3491 57.2012 36.0001C57.2012 38.651 59.3502 40.8001 62.0012 40.8001Z" fill="var(--fill-0, #F26622)"/>
+<path id="Vector_9" d="M62 40C64.2091 40 66 38.2091 66 36C66 33.7909 64.2091 32 62 32C59.7909 32 58 33.7909 58 36C58 38.2091 59.7909 40 62 40Z" fill="var(--fill-0, white)" stroke="var(--stroke-0, #F26622)" stroke-width="0.4"/>
+<path id="Vector_10" opacity="0.5" d="M56 52V48C56 45.2 58.4 44 62 44C65.6 44 68 45.2 68 48V52" stroke="var(--stroke-0, #F26622)" stroke-width="0.4"/>
+<path id="Vector_11" opacity="0.4" d="M24 40L30 34" stroke="var(--stroke-0, #F26622)" stroke-width="0.4" stroke-dasharray="1 1"/>
+<path id="Vector_12" opacity="0.4" d="M56 40L50 34" stroke="var(--stroke-0, #F26622)" stroke-width="0.4" stroke-dasharray="1 1"/>
+<path id="Vector_13" opacity="0.591334" d="M40 18L38 16C36.6667 14.6667 36.6667 13.3333 38 12C39.3333 11.2 40 11.8667 40 14C40 11.8667 40.6667 11.2 42 12C43.3333 13.3333 43.3333 14.6667 42 16L40 18Z" fill="var(--fill-0, #F26622)"/>
+<path id="Vector_14" opacity="0.1" d="M40 70C57.6731 70 72 67.3137 72 64C72 60.6863 57.6731 58 40 58C22.3269 58 8 60.6863 8 64C8 67.3137 22.3269 70 40 70Z" fill="var(--fill-0, #F26622)"/>
+</g>
+</svg>

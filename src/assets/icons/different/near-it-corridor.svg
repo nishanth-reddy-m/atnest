@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<path id="Vector" opacity="0.3" d="M40 12C30 12 22 20 22 30C22 42 40 56 40 56C40 56 58 42 58 30C58 20 50 12 40 12Z" fill="var(--fill-0, #F26622)"/>
+<path id="Vector_2" d="M40 12C30 12 22 20 22 30C22 42 40 56 40 56C40 56 58 42 58 30C58 20 50 12 40 12Z" stroke="var(--stroke-0, #F26622)" stroke-width="0.6"/>
+<path id="Vector_3" opacity="0.6" d="M40 36C43.3137 36 46 33.3137 46 30C46 26.6863 43.3137 24 40 24C36.6863 24 34 26.6863 34 30C34 33.3137 36.6863 36 40 36Z" fill="var(--fill-0, #F26622)"/>
+<path id="Vector_4" d="M40 34C42.2091 34 44 32.2091 44 30C44 27.7909 42.2091 26 40 26C37.7909 26 36 27.7909 36 30C36 32.2091 37.7909 34 40 34Z" fill="var(--fill-0, white)"/>
+<path id="Vector_5" opacity="0.15" d="M21.2 60H12.8C12.3582 60 12 60.3582 12 60.8V75.2C12 75.6418 12.3582 76 12.8 76H21.2C21.6418 76 22 75.6418 22 75.2V60.8C22 60.3582 21.6418 60 21.2 60Z" fill="var(--fill-0, #1A1A1A)"/>
+<path id="Vector_6" opacity="0.15" d="M69.2 62H58.8C58.3582 62 58 62.3582 58 62.8V75.2C58 75.6418 58.3582 76 58.8 76H69.2C69.6418 76 70 75.6418 70 75.2V62.8C70 62.3582 69.6418 62 69.2 62Z" fill="var(--fill-0, #1A1A1A)"/>
+<path id="Vector_7" opacity="0.1" d="M31.2 64H24.8C24.3582 64 24 64.3582 24 64.8V75.2C24 75.6418 24.3582 76 24.8 76H31.2C31.6418 76 32 75.6418 32 75.2V64.8C32 64.3582 31.6418 64 31.2 64Z" fill="var(--fill-0, #1A1A1A)"/>
+<path id="Vector_8" opacity="0.1" d="M55.2 66H48.8C48.3582 66 48 66.3582 48 66.8V75.2C48 75.6418 48.3582 76 48.8 76H55.2C55.6418 76 56 75.6418 56 75.2V66.8C56 66.3582 55.6418 66 55.2 66Z" fill="var(--fill-0, #1A1A1A)"/>
+<path id="Vector_9" opacity="0.5" d="M15.6 63.2H14V64.8H15.6V63.2Z" fill="var(--fill-0, white)"/>
+<path id="Vector_10" opacity="0.5" d="M18.3988 63.2001H16.7988V64.8001H18.3988V63.2001Z" fill="var(--fill-0, white)"/>
+<path id="Vector_11" opacity="0.5" d="M15.6 66.8H14V68.4H15.6V66.8Z" fill="var(--fill-0, white)"/>
+<path id="Vector_12" opacity="0.5" d="M18.3988 66.7999H16.7988V68.3999H18.3988V66.7999Z" fill="var(--fill-0, white)"/>
+<path id="Vector_13" opacity="0.2" d="M8 76H72" stroke="var(--stroke-0, #F26622)" stroke-width="0.4"/>
+</g>
+</svg>
