@@ -1,0 +1,10 @@
+<div class="hero-tabs">
+  <button
+    *ngFor="let tab of tabs()"
+    type="button"
+    class="hero-tab"
+    [class.hero-tab-active]="tab === activeTab()"
+  >
+    {{ tab }}
+  </button>
+</div>

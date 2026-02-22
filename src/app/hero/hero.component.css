@@ -1,0 +1,95 @@
+.hero {
+  padding: var(--space-8) var(--content-gutter) var(--space-12);
+  background:
+    radial-gradient(circle at 0 0, color-mix(in srgb, var(--atnest-primary) 15%, transparent), transparent 55%),
+    radial-gradient(circle at 100% 100%, color-mix(in srgb, var(--atnest-primary) 12%, transparent), transparent 55%),
+    var(--atnest-bg);
+}
+
+.hero-inner {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.hero-left,
+.hero-right {
+  flex: 1 1 0;
+}
+
+.hero-search-pill {
+  background: var(--atnest-primary);
+  border-radius: 999px;
+  padding: var(--space-3) var(--space-4);
+  color: var(--atnest-text-inverse);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  margin-top: var(--space-4);
+}
+
+.hero-category-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  border-radius: 999px;
+  background: var(--atnest-bg);
+  color: var(--atnest-primary);
+  border: 1px solid var(--atnest-border);
+  font-size: var(--text-label);
+  line-height: var(--leading-label);
+  font-weight: var(--font-semibold);
+  letter-spacing: 0.02em;
+}
+
+.hero-category-pill-bullet {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--atnest-primary);
+  flex-shrink: 0;
+}
+
+.hero-heading {
+  margin: 0 0 var(--space-3);
+  font-family: var(--font-sans);
+  font-size: var(--display-hero-size);
+  line-height: var(--display-hero-leading);
+  font-weight: var(--font-bold);
+  color: var(--atnest-text);
+  text-align: left;
+}
+
+.hero-heading-highlight {
+  color: var(--atnest-primary);
+}
+
+.hero-description {
+  margin: 0 0 var(--space-5);
+  max-width: 32rem;
+  color: var(--atnest-text-muted);
+  font-size: var(--body-large-size);
+  line-height: var(--body-large-leading);
+  font-weight: var(--font-normal);
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: var(--space-10);
+  }
+
+  .hero-inner {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-heading {
+    font-size: 4.5rem; /* Display Hero 72px */
+    line-height: 1.222; /* 88px */
+  }
+}

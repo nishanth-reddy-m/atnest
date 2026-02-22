@@ -1,0 +1,73 @@
+/* Shared design variables (spacing, typography, radius) – align with Figma */
+:root {
+  /* Spacing (8px base) */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+
+  /* Layout */
+  --content-max-width: 75rem;   /* 1200px */
+  --content-gutter: var(--space-4);
+  --header-height: 4rem;
+
+  /* Typography – Lexend, style guide */
+  --font-sans: 'Lexend', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, monospace;
+
+  /* Display & headings (style guide: 72px/88px hero, 48px/60px H1) */
+  --display-hero-size: clamp(2.25rem, 5vw + 1.5rem, 4.5rem); /* 72px max */
+  --display-hero-leading: 1.222; /* 88/72 */
+  --heading-h1-size: 3rem; /* 48px */
+  --heading-h1-leading: 1.25; /* 60/48 */
+  --heading-h2-size: 2rem;
+  --heading-h2-leading: 1.375;
+  --heading-h3-size: 1.5rem;
+  --heading-h3-leading: 1.33;
+
+  /* Body */
+  --body-large-size: 1.125rem;
+  --body-large-leading: 1.56;
+  --body-medium-size: 1rem;
+  --body-medium-leading: 1.5;
+  --body-small-size: 0.875rem;
+  --body-small-leading: 1.43;
+
+  /* Button & label */
+  --button-text-size: 1rem;
+  --button-text-leading: 1.25;
+  --text-label: 0.75rem;
+  --leading-label: 1.33;
+  --caption-size: 0.6875rem;
+  --caption-leading: 1.27;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+}

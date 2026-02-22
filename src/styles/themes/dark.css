@@ -1,0 +1,27 @@
+/* ATNEST – Dark theme (Figma Color Variables) */
+.theme-dark {
+  /* Primary – Figma: Primary Colour, Primary Dark - Colour */
+  --atnest-primary: #F26622;
+  --atnest-primary-hover: #d95211;
+  --atnest-primary-light: rgba(242, 102, 34, 0.25);
+  --atnest-primary-muted: #2A2A2A;
+
+  /* Neutral / surface – Figma: Black, Background Dark */
+  --atnest-bg: #1A1A1A;
+  --atnest-bg-elevated: #2A2A2A;
+  --atnest-bg-muted: #2A2A2A;
+
+  /* Text – Figma: White - Colour, Gray - Colour */
+  --atnest-text: #FFFFFF;
+  --atnest-text-muted: #6B6B6B;
+  --atnest-text-inverse: #1A1A1A;
+
+  /* Border – Figma: Light Gray - Colour, Gray - Colour */
+  --atnest-border: #6B6B6B;
+  --atnest-border-strong: #D9D9D9;
+
+  /* Accent – Figma: Accent Purple - Colour */
+  --atnest-accent: #7675F3;
+  --atnest-success: #34d399;
+  --atnest-error: #f87171;
+}

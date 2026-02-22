@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ThemeService } from './core/services/theme.service';
+import { HeroComponent } from './hero/hero.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [HeroComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'atnest';
+  readonly title = 'atnest';
+
+  constructor(private readonly theme: ThemeService) {}
 }

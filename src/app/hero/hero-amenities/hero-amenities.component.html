@@ -1,0 +1,9 @@
+<div class="hero-amenities">
+  <button
+    *ngFor="let amenity of amenities()"
+    type="button"
+    class="hero-amenity"
+  >
+    <span class="hero-amenity-icon">{{ amenity.icon }}</span>
+  </button>
+</div>

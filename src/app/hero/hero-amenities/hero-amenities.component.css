@@ -1,0 +1,26 @@
+.hero-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+}
+
+.hero-amenity {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  border: none;
+  background: var(--atnest-bg);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hero-amenity-icon {
+  font-size: 1.1rem;
+  display: block;
+  text-align: center;
+  line-height: 1;
+}

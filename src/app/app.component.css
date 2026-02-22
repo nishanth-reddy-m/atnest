@@ -1,4 +1,1 @@
-h1 {
-  color: #1976d2;
-  margin: 1rem 0;
-}
+/* App shell – no hero styles; hero uses theme variables in its own components */

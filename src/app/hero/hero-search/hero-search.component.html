@@ -1,0 +1,14 @@
+<div class="hero-search">
+  <div class="hero-search-input" *ngFor="let city of cities()">
+    <span class="hero-search-icon hero-search-icon--location" aria-hidden="true">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+    </span>
+    <span class="hero-search-label">{{ city }}</span>
+    <span class="hero-search-chevron" aria-hidden="true">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+    </span>
+  </div>
+  <button type="button" class="hero-search-button" aria-label="Search">
+    <svg class="hero-search-icon-search" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+  </button>
+</div>

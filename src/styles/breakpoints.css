@@ -1,0 +1,16 @@
+/* Responsive breakpoints – use in media queries and Angular */
+/* Mobile: default (< 768px) */
+/* Tablet: 768px – 1023px */
+/* Desktop: 1024px+ */
+
+@media (min-width: 768px) {
+  :root {
+    --content-gutter: var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --content-gutter: var(--space-8);
+  }
+}

@@ -1,0 +1,36 @@
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <app-hero-tabs [tabs]="tabs" [activeTab]="activeTab()" />
+      <div class="hero-search-pill">
+        <app-hero-search [cities]="cities" />
+      </div>
+
+      <div class="hero-category-pill"><span class="hero-category-pill-bullet" aria-hidden="true"></span>Hotels</div>
+
+      <h1 class="hero-heading">
+        Premium
+        <span class="hero-heading-highlight">Budget</span>
+        <span class="hero-heading-highlight">Luxury</span>
+        Hotels
+      </h1>
+
+      <p class="hero-description">
+        Discover comfortable stays in the heart of the city with top‑notch hospitality and modern conveniences.
+      </p>
+
+      <app-hero-amenities [amenities]="amenities" />
+
+      <app-hero-price-rating
+        [pricePerDay]="pricePerDay"
+        [rating]="rating"
+        [ratingCaption]="ratingCaption"
+        [avatarCount]="avatarCount"
+      />
+    </div>
+
+    <div class="hero-right">
+      <app-hero-gallery />
+    </div>
+  </div>
+</div>
