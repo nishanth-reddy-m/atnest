@@ -4,7 +4,9 @@
     type="button"
     class="hero-tab"
     [class.hero-tab-active]="tab === activeTab()"
+    (click)="onTabClick(tab)"
   >
+    <img class="hero-tab-icon" [src]="tabIcons[tab]" alt="" aria-hidden="true" />
     {{ tab }}
   </button>
 </div>

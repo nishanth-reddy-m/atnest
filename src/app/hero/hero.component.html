@@ -1,9 +1,14 @@
 <div class="hero">
   <div class="hero-inner">
     <div class="hero-left">
-      <app-hero-tabs [tabs]="tabs" [activeTab]="activeTab()" />
-      <div class="hero-search-pill">
-        <app-hero-search [cities]="cities" />
+      <div class="hero-search-module" aria-label="Search">
+        <div class="hero-search-module-backplate" aria-hidden="true"></div>
+        <div class="hero-search-module-tabs">
+          <app-hero-tabs [tabs]="tabs" [activeTab]="activeTab()" (tabChange)="activeTab.set($event)" />
+        </div>
+        <div class="hero-search-module-fields">
+          <app-hero-search [cities]="cities" />
+        </div>
       </div>
 
       <div class="hero-category-pill"><span class="hero-category-pill-bullet" aria-hidden="true"></span>Hotels</div>
@@ -30,7 +35,9 @@
     </div>
 
     <div class="hero-right">
-      <app-hero-gallery />
+      <div class="hero-right-inner">
+        <app-hero-gallery />
+      </div>
     </div>
   </div>
 </div>

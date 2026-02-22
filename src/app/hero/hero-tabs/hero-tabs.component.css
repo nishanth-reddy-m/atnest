@@ -18,6 +18,16 @@
   cursor: pointer;
   font-family: var(--font-sans);
   text-align: left;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.hero-tab-icon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  display: block;
 }
 
 .hero-tab:hover {
@@ -25,7 +35,11 @@
 }
 
 .hero-tab-active {
-  background: var(--atnest-bg);
-  color: var(--atnest-primary);
+  background: var(--atnest-primary);
+  color: var(--atnest-text-inverse);
   font-weight: var(--font-semibold);
+}
+
+.hero-tab-active .hero-tab-icon {
+  filter: brightness(0) invert(1);
 }
