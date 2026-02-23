@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { HomeAmenitiesComponent } from './home-amenities/home-amenities.component';
 import { HomePropertyTypesComponent } from './home-property-types/home-property-types.component';
+import { HomeRealStoriesComponent } from './home-real-stories/home-real-stories.component';
 import { OurPropertiesComponent } from './properties/our-properties/our-properties.component';
 
 @Component({
@@ -17,6 +18,7 @@ import { OurPropertiesComponent } from './properties/our-properties/our-properti
     OurPropertiesComponent,
     HomeAmenitiesComponent,
     HomePropertyTypesComponent,
+    HomeRealStoriesComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

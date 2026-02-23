@@ -1,0 +1,135 @@
+<section class="real-stories" aria-label="Real Stories">
+  <div class="real-stories__bg" aria-hidden="true">
+    <div class="real-stories__glow real-stories__glow--1"></div>
+    <div class="real-stories__glow real-stories__glow--2"></div>
+    <div class="real-stories__glow real-stories__glow--3"></div>
+  </div>
+
+  <div class="real-stories__inner">
+    <div class="real-stories__top">
+      <div class="real-stories__heading">
+        <div class="real-stories__badge">Testimonials</div>
+
+        <h2 class="real-stories__title">
+          <span class="real-stories__title-line">Real Stories from</span>
+          <span class="real-stories__title-line real-stories__title-line--accent">Blossoms&#64;nest</span>
+        </h2>
+      </div>
+
+      <div class="real-stories__nav" aria-hidden="true">
+        <button type="button" class="real-stories__nav-btn real-stories__nav-btn--light">
+          <img [src]="arrowLeftSrc" alt="" />
+        </button>
+        <button type="button" class="real-stories__nav-btn real-stories__nav-btn--dark">
+          <img [src]="arrowRightSrc" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <div class="real-stories__grid">
+      <article class="review-card review-card--main">
+        <div class="review-card__stars" aria-hidden="true">
+          <img class="review-card__star" *ngFor="let _ of [1, 2, 3, 4, 5]" [src]="starSrc" alt="" />
+        </div>
+
+        <p class="review-card__quote">
+          {{ mainReview?.quote }}
+        </p>
+
+        <div class="review-card__quote-mark" aria-hidden="true">
+          <img [src]="quoteMarkSrc" alt="" />
+        </div>
+
+        <div class="review-card__footer">
+          <div class="review-card__person">
+            <div class="review-card__avatar" aria-hidden="true">{{ mainReview?.initials }}</div>
+            <div class="review-card__person-meta">
+              <div class="review-card__person-name">{{ mainReview?.personName }}</div>
+              <div class="review-card__person-role">{{ mainReview?.personRole }}</div>
+            </div>
+          </div>
+
+          <div class="review-card__verified" *ngIf="mainReview?.verified">Verified</div>
+        </div>
+      </article>
+
+      <article class="story-card">
+        <div class="story-card__media">
+          <img class="story-card__img" [src]="heroImageSrc" alt="" />
+          <div class="story-card__pill">Kokapet, Hyderabad</div>
+        </div>
+
+        <div class="story-card__title">Blossoms&#64;nest</div>
+
+        <div class="story-card__meta">
+          <div class="story-card__meta-item">189 Reviews</div>
+          <div class="story-card__meta-item">Verified Property</div>
+        </div>
+      </article>
+
+      <div class="real-stories__side">
+        <div class="real-stories__side-row">
+          <article class="stat-card">
+            <div class="stat-card__value">4.9</div>
+            <div class="stat-card__stars" aria-hidden="true">
+              <img class="stat-card__star" *ngFor="let _ of [1, 2, 3, 4, 5]" [src]="starSrc" alt="" />
+            </div>
+            <div class="stat-card__label">From 2k+ reviews</div>
+          </article>
+
+          <article class="highlight-card">
+            <div class="highlight-card__head">
+              <div class="highlight-card__badge" aria-hidden="true">AD</div>
+              <div class="highlight-card__name">Ananya Das</div>
+            </div>
+
+            <p class="highlight-card__quote">"The best thing about &#64;nest is the vibe. It truly feels like ..."</p>
+          </article>
+        </div>
+
+        <div class="real-stories__side-row">
+          <!-- Empty row as per Figma design -->
+        </div>
+      </div>
+
+      <div class="real-stories__micro">
+        <article class="micro-review">
+          <div class="micro-review__avatar">
+            RG
+          </div>
+
+          <div class="micro-review__body">
+            <div class="micro-review__stars" aria-hidden="true">
+              <img class="micro-review__star" *ngFor="let _ of [1, 2, 3, 4, 5]" [src]="starSrc" alt="" />
+            </div>
+            <div class="micro-review__quote">"Great location near IT parks. The amenities are excellent."</div>
+          </div>
+        </article>
+
+        <article class="micro-review">
+          <div class="micro-review__avatar">
+            RG
+          </div>
+
+          <div class="micro-review__body">
+            <div class="micro-review__stars" aria-hidden="true">
+              <img class="micro-review__star" *ngFor="let _ of [1, 2, 3, 4, 5]" [src]="starSrc" alt="" />
+            </div>
+            <div class="micro-review__quote">"The best thing about &#64;nest is the vibe. It truly feels like ..."</div>
+          </div>
+        </article>
+
+        <article class="micro-review">
+          <div class="micro-review__avatar micro-review__avatar--accent">
+            KN
+          </div>
+
+          <div class="micro-review__body">
+            <div class="micro-review__verified">VERIFIED</div>
+            <div class="micro-review__quote">"Absolutely loved my stay! Clean spaces, modern facilities."</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
