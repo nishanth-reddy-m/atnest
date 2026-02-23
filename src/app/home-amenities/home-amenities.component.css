@@ -1,0 +1,163 @@
+.home-amenities {
+  background: var(--atnest-bg);
+  padding: 150px 160px;
+}
+
+.home-amenities__inner {
+  width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.home-amenities__heading {
+  padding: 0 311px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.home-amenities__title {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: var(--font-bold);
+  font-size: 60px;
+  line-height: 48px;
+  color: var(--atnest-text);
+}
+
+.home-amenities__title-accent {
+  color: var(--atnest-primary);
+}
+
+.home-amenities__subtitle {
+  margin: 0;
+  width: 654px;
+  font-family: var(--font-sans);
+  font-weight: var(--font-normal);
+  font-size: 20px;
+  line-height: 32.5px;
+  color: var(--atnest-text-muted);
+}
+
+.home-amenities__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 32px;
+}
+
+.amenity-card {
+  width: 355px;
+  height: 241px;
+  border-radius: 24px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 245, 240, 0.3) 0%, rgba(255, 232, 220, 0.3) 100%);
+}
+
+.amenity-card__corner {
+  position: absolute;
+  right: 0;
+  top: 0.41px;
+  width: 80px;
+  height: 80px;
+  background: rgba(242, 102, 34, 0.05);
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 999px;
+}
+
+.amenity-card__content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.amenity-card__icon {
+  width: 302px;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amenity-card__icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  padding: 18px 22px;
+}
+
+.amenity-card__title {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: var(--font-bold);
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--atnest-text);
+}
+
+.amenity-card__description {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: var(--font-normal);
+  font-size: 14px;
+  line-height: 22.4px;
+  color: var(--atnest-text);
+}
+
+@media (max-width: 1700px) {
+  .home-amenities {
+    padding: 120px var(--content-gutter);
+  }
+
+  .home-amenities__inner {
+    width: calc(100% - 2 * var(--content-gutter));
+  }
+
+  .home-amenities__heading {
+    padding: 0;
+  }
+
+  .home-amenities__subtitle {
+    width: min(654px, 100%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-amenities {
+    padding: 80px var(--content-gutter);
+  }
+
+  .home-amenities__title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .amenity-card {
+    width: min(355px, 100%);
+  }
+
+  .amenity-card__content {
+    width: calc(100% - 40px);
+  }
+
+  .amenity-card__icon,
+  .amenity-card__icon img {
+    width: 100%;
+  }
+
+  .amenity-card__icon img {
+    padding: 16px 18px;
+  }
+}

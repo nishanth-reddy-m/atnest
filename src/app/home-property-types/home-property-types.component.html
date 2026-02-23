@@ -1,0 +1,39 @@
+<section class="home-property-types" aria-label="Property types">
+  <div class="home-property-types__inner">
+    <div class="home-property-types__cards" role="list">
+      <article
+        class="property-type-card"
+        *ngFor="let card of cards"
+        role="listitem"
+        [class.property-type-card--highlighted]="card.highlighted"
+      >
+        <div class="property-type-card__icon" aria-hidden="true">
+          <img [src]="card.iconSrc" alt="" />
+        </div>
+
+        <div class="property-type-card__header">
+          <h3 class="property-type-card__title">{{ card.title }}</h3>
+          <div class="property-type-card__subtitle">{{ card.subtitle }}</div>
+        </div>
+
+        <div class="property-type-card__divider" aria-hidden="true"></div>
+
+        <ul class="property-type-card__list">
+          <li class="property-type-card__item" *ngFor="let item of card.items">
+            <span class="property-type-card__dot" aria-hidden="true"></span>
+            <span class="property-type-card__item-text">{{ item }}</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="home-property-types__tagline" aria-label="Tagline">
+      <div class="home-property-types__tagline-text">
+        <div>the right</div>
+        <div>match</div>
+        <div>for</div>
+        <div>your lifestyle</div>
+      </div>
+    </div>
+  </div>
+</section>

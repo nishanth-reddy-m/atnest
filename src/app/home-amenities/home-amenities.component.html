@@ -1,0 +1,27 @@
+<section class="home-amenities" id="amenities" aria-label="World-Class Amenities">
+  <div class="home-amenities__inner">
+    <div class="home-amenities__heading">
+      <h2 class="home-amenities__title">
+        World-Class <span class="home-amenities__title-accent">Amenities</span> for Your
+        <span class="home-amenities__title-accent"> Comfort</span>
+      </h2>
+      <p class="home-amenities__subtitle">
+        Every detail designed to enhance your experience, from wellness to entertainment and everything in between.
+      </p>
+    </div>
+
+    <div class="home-amenities__grid" role="list">
+      <article class="amenity-card" *ngFor="let card of cards" role="listitem">
+        <div class="amenity-card__corner" aria-hidden="true"></div>
+
+        <div class="amenity-card__content">
+          <div class="amenity-card__icon" aria-hidden="true">
+            <img [src]="card.iconSrc" alt="" />
+          </div>
+          <h3 class="amenity-card__title">{{ card.title }}</h3>
+          <p class="amenity-card__description">{{ card.description }}</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
