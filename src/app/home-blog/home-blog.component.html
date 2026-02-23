@@ -1,0 +1,54 @@
+<section class="blog-section" aria-label="Blog Section">
+  <div class="blog-section__inner">
+    <div class="blog-section__top">
+      <div class="blog-section__heading">
+        <div class="blog-section__subtitle">Our Journal</div>
+        <div class="blog-section__title">
+          <span class="blog-section__title-text">Latest </span>
+          <span class="blog-section__title-accent">Insights</span>
+          <span class="blog-section__title-text"> & Living </span>
+          <span class="blog-section__title-accent">Trends</span>
+        </div>
+        <p class="blog-section__description">
+          Stay updated with the latest news, tips, and trends in the world of modern hospitality.
+        </p>
+      </div>
+
+      <a href="#" class="blog-section__explore-link">
+        <span class="blog-section__explore-text">Explore Journal</span>
+        <img class="blog-section__explore-icon" [src]="calendarIconSrc" alt="" />
+      </a>
+    </div>
+
+    <div class="blog-section__grid">
+      <article class="blog-card" *ngFor="let post of blogPosts">
+        <div class="blog-card__image-container">
+          <img class="blog-card__image" [src]="post.imageSrc" [alt]="post.title" />
+          <div class="blog-card__category">{{ post.category }}</div>
+        </div>
+
+        <div class="blog-card__content">
+          <div class="blog-card__meta">
+            <div class="blog-card__date">
+              <img class="blog-card__date-icon" [src]="calendarIconSrc" alt="" />
+              <span class="blog-card__date-text">{{ post.date }}</span>
+            </div>
+            <div class="blog-card__author">
+              <img class="blog-card__author-icon" [src]="userIconSrc" alt="" />
+              <span class="blog-card__author-name">{{ post.author }}</span>
+            </div>
+          </div>
+
+          <h3 class="blog-card__title">{{ post.title }}</h3>
+          
+          <p class="blog-card__description">{{ post.description }}</p>
+
+          <a href="#" class="blog-card__read-more">
+            <span class="blog-card__read-more-text">Read Article</span>
+            <img class="blog-card__read-more-icon" [src]="arrowIconSrc" alt="" />
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

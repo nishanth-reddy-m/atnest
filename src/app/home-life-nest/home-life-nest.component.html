@@ -1,0 +1,49 @@
+<section class="social-wall" aria-label="Social Wall">
+  <div class="social-wall__inner">
+    <div class="social-wall__top">
+      <div class="social-wall__heading">
+        <div class="social-wall__subtitle">Social Wall</div>
+        <h2 class="social-wall__title">
+          <span class="social-wall__title-text">Life </span>
+          <span class="social-wall__title-accent">&#64;nest</span>
+        </h2>
+      </div>
+
+      <div class="social-wall__social-links">
+        <a href="#" class="social-wall__social-link">
+          <img class="social-wall__social-icon" [src]="instagramIconSrc" alt="" />
+          <span class="social-wall__social-text">Follow on Instagram</span>
+        </a>
+
+        <div class="social-wall__divider">|</div>
+
+        <a href="#" class="social-wall__social-link">
+          <img class="social-wall__social-icon" [src]="facebookIconSrc" alt="" />
+          <span class="social-wall__social-text">Like on Facebook</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="social-wall__gallery">
+      <div class="social-wall__gallery-item" *ngFor="let image of socialImages; let i = index">
+        <img class="social-wall__gallery-image" [src]="image" alt="" />
+        
+        <div class="social-wall__play-button" *ngIf="playIconTypes[i]">
+          <img 
+            class="social-wall__play-icon" 
+            [src]="playIconSrc" 
+            alt="" 
+          />
+        </div>
+        
+        <div class="social-wall__play-button" *ngIf="!playIconTypes[i]">
+          <img 
+            class="social-wall__play-icon" 
+            [src]="playIconAltSrc" 
+            alt="" 
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
