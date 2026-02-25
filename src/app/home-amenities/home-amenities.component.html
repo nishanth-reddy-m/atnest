@@ -16,7 +16,7 @@
 
         <div class="amenity-card__content">
           <div class="amenity-card__icon" aria-hidden="true">
-            <img [src]="card.iconSrc" alt="" />
+            <app-amenity-icon [name]="card.iconName" />
           </div>
           <h3 class="amenity-card__title">{{ card.title }}</h3>
           <p class="amenity-card__description">{{ card.description }}</p>

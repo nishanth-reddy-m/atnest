@@ -1,40 +1,80 @@
 .hero-gallery {
+
   position: relative;
+
   width: 900px;
+
   height: 654px;
+
 }
+
+
 
 .hero-image {
+
   position: absolute;
+
   overflow: hidden;
+
   background: transparent;
+
   box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+
 }
+
+
 
 .hero-image-main {
+
   left: 29.72px;
+
   top: 0;
+
   width: 769px;
+
   height: 614px;
+
   border-radius: 30px;
+
   border: 6px solid var(--atnest-bg);
+
   z-index: 1;
+
 }
+
+
 
 .hero-image-secondary {
+
   left: -104.28px;
+
   top: 177px;
+
   width: 250px;
+
   height: 320px;
+
   border-radius: 24px;
+
   border: 6px solid var(--atnest-bg);
+
   box-shadow: 0px 20px 50px -10px rgba(0, 0, 0, 0.2);
+
   z-index: 2;
+
 }
 
+
+
 .hero-image-img {
+
   width: 100%;
+
   height: 100%;
+
   object-fit: cover;
+
   display: block;
+
 }
+

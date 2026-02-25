@@ -1,21 +1,42 @@
 <div class="hero-price-rating">
+
   <div class="hero-price-block">
+
     <div class="hero-price">{{ pricePerDay() }}</div>
+
     <div class="hero-price-sub">Best price guarantee</div>
+
   </div>
 
+
+
   <div class="hero-rating-block">
+
     <div class="hero-avatars">
+
       @for (avatar of avatarPlaceholders(); track $index) {
+
         <div
+
           class="hero-avatar"
+
           [style.z-index]="avatarCount() - $index"
+
         ></div>
+
       }
+
     </div>
+
     <div class="hero-rating-text">
+
       <span class="hero-rating-score">{{ rating() }}/5</span>
+
       <span class="hero-rating-caption">{{ ratingCaption() }}</span>
+
     </div>
+
   </div>
+
 </div>
+

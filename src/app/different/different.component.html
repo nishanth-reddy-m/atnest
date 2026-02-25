@@ -1,26 +1,52 @@
 <section class="different" aria-label="What Makes Us Different">
+
   <div class="different__inner">
+
     <div class="different__content">
+
       <div class="different__heading">
+
         <h2 class="different__title">
+
           What <span class="different__title-accent">Makes Us</span> Different
+
         </h2>
+
         <p class="different__subtitle">
+
           Experience hospitality redefined with our unique approach to comfort and care
+
         </p>
+
       </div>
+
+
 
       <div class="different__grid" role="list">
+
         <div class="different__item" *ngFor="let feature of features" role="listitem">
+
           <img class="different__icon" [src]="feature.iconSrc" alt="" aria-hidden="true" />
+
           <div class="different__label">{{ feature.label }}</div>
+
         </div>
+
       </div>
+
     </div>
 
+
+
     <div class="different__art" aria-hidden="true">
+
       <img class="different__art-img" [src]="modelImageSrc" alt="" />
+
       <div class="different__art-glow"></div>
+
     </div>
+
   </div>
+
 </section>
+

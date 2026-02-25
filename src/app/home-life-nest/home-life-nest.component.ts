@@ -9,20 +9,19 @@ import { Component } from '@angular/core';
   styleUrl: './home-life-nest.component.css',
 })
 export class HomeLifeNestComponent {
-  readonly instagramIconSrc = 'https://www.figma.com/api/mcp/asset/344737f9-5f2b-43a6-a7ed-14c0ade11e6b';
-  readonly facebookIconSrc = 'https://www.figma.com/api/mcp/asset/9de9b4e4-a1ce-418f-a353-84cebf38d3e0';
-  readonly playIconSrc = 'https://www.figma.com/api/mcp/asset/1a400b14-0a72-4d9d-ac42-bc3951240f09';
-  readonly playIconAltSrc = 'https://www.figma.com/api/mcp/asset/820d0e0b-0053-441f-8549-887ae36c1905';
+  readonly instagramIconSrc = 'https://www.figma.com/api/mcp/asset/9890ff6d-5711-4024-87f1-5906164a2b96';
+  readonly facebookIconSrc = 'https://www.figma.com/api/mcp/asset/679c585c-a19f-4178-b9bd-3b7b7ef3705c';
+  readonly playIconSrc = 'https://www.figma.com/api/mcp/asset/c6c936bc-86c3-42b0-8600-8ff1581e5b0c';
+  readonly playIconAltSrc = 'https://www.figma.com/api/mcp/asset/68e77f2b-9e61-45e3-b284-cfa2a5e29152';
 
   readonly socialImages = [
-    'https://www.figma.com/api/mcp/asset/82600107-c72f-4e48-8c26-cdedb1b268d5',
-    'https://www.figma.com/api/mcp/asset/9c8871f0-2eea-479c-805e-ebb8f31e10fd',
-    'https://www.figma.com/api/mcp/asset/24c017ed-f95f-4592-8b10-fc46cb327472',
-    'https://www.figma.com/api/mcp/asset/bb2109b7-c5b9-40f4-af7c-b6279faf1036',
-    'https://www.figma.com/api/mcp/asset/18309522-d4df-447e-8c57-44d94b0f4023',
-    'https://www.figma.com/api/mcp/asset/727a3ab7-fb92-4e4c-baf8-b03c16ce9ec4',
-    'https://www.figma.com/api/mcp/asset/18309522-d4df-447e-8c57-44d94b0f4023'
+    'https://www.figma.com/api/mcp/asset/2e2b7128-0559-493f-b818-89d5321e6d17',
+    'https://www.figma.com/api/mcp/asset/114baa34-64f8-4f93-a161-46cea14390fe',
+    'https://www.figma.com/api/mcp/asset/68086f1b-242d-43ad-9a64-2c480ff91591',
+    'https://www.figma.com/api/mcp/asset/a1ceda5d-7fd7-44cd-ae35-fdc0123e5495',
+    'https://www.figma.com/api/mcp/asset/8eaf49da-6839-4337-a113-83b85d5abefa',
+    'https://www.figma.com/api/mcp/asset/13f59dbb-c266-4eac-9d95-03592024a072'
   ];
 
-  readonly playIconTypes = [true, false, true, false, true, false, true];
+  readonly playIconTypes = [true, false, true, false, true, false];
 }
