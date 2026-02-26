@@ -1,5 +1,8 @@
 .hero-tabs {
 
+
+  background-color: var(--atnest-bg);
+
   display: flex;
 
   gap: var(--space-2);
@@ -7,6 +10,10 @@
   padding: 0;
 
   align-items: center;
+
+  border: 1px solid var(--atnest-border);
+
+  border-radius: 50px;
 
 }
 

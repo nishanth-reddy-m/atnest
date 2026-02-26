@@ -1,9 +1,8 @@
 .hero-search {
   display: flex;
   align-items: center;
+  width: 675px;
   gap: var(--space-2);
-  background: var(--atnest-bg);
-  border-radius: 999px;
   padding: var(--space-2) var(--space-2) var(--space-2) var(--space-4);
 }
 
@@ -15,7 +14,7 @@
   justify-content: space-between;
   gap: var(--space-2);
   padding: var(--space-2) var(--space-3);
-  border-radius: 999px;
+  border-radius: 10px;
   background: var(--atnest-bg-muted);
   color: var(--atnest-text);
   font-size: var(--body-medium-size);
@@ -50,12 +49,12 @@
 
 .hero-search-button {
   flex: 0 0 auto;
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 999px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 10px;
   border: none;
-  background: var(--atnest-primary);
-  color: var(--atnest-text-inverse);
+  background: var(--atnest-bg-muted);
+  color: var(--atnest-primary);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -64,5 +63,5 @@
 }
 
 .hero-search-icon-search {
-  color: var(--atnest-text-inverse);
+  color: var(--atnest-primary);
 }
