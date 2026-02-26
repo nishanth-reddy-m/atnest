@@ -9,18 +9,18 @@ import { Component } from '@angular/core';
   styleUrl: './home-life-nest.component.css',
 })
 export class HomeLifeNestComponent {
-  readonly instagramIconSrc = 'https://www.figma.com/api/mcp/asset/9890ff6d-5711-4024-87f1-5906164a2b96';
-  readonly facebookIconSrc = 'https://www.figma.com/api/mcp/asset/679c585c-a19f-4178-b9bd-3b7b7ef3705c';
-  readonly playIconSrc = 'https://www.figma.com/api/mcp/asset/c6c936bc-86c3-42b0-8600-8ff1581e5b0c';
-  readonly playIconAltSrc = 'https://www.figma.com/api/mcp/asset/68e77f2b-9e61-45e3-b284-cfa2a5e29152';
+  readonly instagramIconSrc = 'https://www.figma.com/api/mcp/asset/d9fa4a2d-c06a-4f3d-bef3-4118fdfde029';
+  readonly facebookIconSrc = 'https://www.figma.com/api/mcp/asset/bb2d93c2-1f58-40a7-b0ba-8e0c9f5a870c';
+  readonly playIconSrc = 'https://www.figma.com/api/mcp/asset/aefd2261-1e22-49bf-8516-7ead774c579d';
+  readonly playIconAltSrc = 'https://www.figma.com/api/mcp/asset/3f90b85a-a360-410a-9b35-d4be7d1ef9e8';
 
   readonly socialImages = [
-    'https://www.figma.com/api/mcp/asset/2e2b7128-0559-493f-b818-89d5321e6d17',
-    'https://www.figma.com/api/mcp/asset/114baa34-64f8-4f93-a161-46cea14390fe',
-    'https://www.figma.com/api/mcp/asset/68086f1b-242d-43ad-9a64-2c480ff91591',
-    'https://www.figma.com/api/mcp/asset/a1ceda5d-7fd7-44cd-ae35-fdc0123e5495',
-    'https://www.figma.com/api/mcp/asset/8eaf49da-6839-4337-a113-83b85d5abefa',
-    'https://www.figma.com/api/mcp/asset/13f59dbb-c266-4eac-9d95-03592024a072'
+    'https://www.figma.com/api/mcp/asset/6155b8f4-37cd-4446-87d4-87476ff0f40c',
+    'https://www.figma.com/api/mcp/asset/9039b4eb-7d9f-4907-9836-78d10aa886de',
+    'https://www.figma.com/api/mcp/asset/a2958c48-c985-45aa-a796-855a7a123209',
+    'https://www.figma.com/api/mcp/asset/f93ce96a-9c80-424c-957e-85eaa62ecdd6',
+    'https://www.figma.com/api/mcp/asset/2add9d9a-1a33-418c-a8ab-f34bc57fc58d',
+    'https://www.figma.com/api/mcp/asset/34cda19e-7d82-4287-8f37-7fcab7c0bf54'
   ];
 
   readonly playIconTypes = [true, false, true, false, true, false];
