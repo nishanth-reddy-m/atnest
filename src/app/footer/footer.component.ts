@@ -1,25 +1,26 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css',
 })
 export class FooterComponent {
-  readonly emailIconSrc = 'https://www.figma.com/api/mcp/asset/c0130501-97b9-4efa-aa60-98b7ba86440b';
-  readonly inputIconSrc = 'https://www.figma.com/api/mcp/asset/90eaf9f2-ac3c-4623-8596-31b7e92cb22e';
-  readonly arrowIconSrc = 'https://www.figma.com/api/mcp/asset/cecfce41-0ea8-408e-893a-78424f0192d3';
-  readonly logoSrc = 'https://www.figma.com/api/mcp/asset/644b9de8-6495-414d-8d7c-7eefad2ec3b4';
-  readonly locationIconSrc = 'https://www.figma.com/api/mcp/asset/200759fb-f314-49e6-ad6a-34cc369860ae';
-  readonly facebookIconSrc = 'https://www.figma.com/api/mcp/asset/9be19a22-204d-4959-b4ce-f1f4cc4af0e0';
-  readonly twitterIconSrc = 'https://www.figma.com/api/mcp/asset/eaf392dd-fc59-4c63-86fe-dfad6acbdd67';
-  readonly instagramIconSrc = 'https://www.figma.com/api/mcp/asset/2efee10b-b914-4558-a7af-69f0c6070e35';
-  readonly linkedinIconSrc = 'https://www.figma.com/api/mcp/asset/367a492e-f7e0-4adb-b08d-0c543a777d17';
-  readonly youtubeIconSrc = 'https://www.figma.com/api/mcp/asset/cc38bc02-a191-44fb-b9e8-17aeaa4aa7b6';
-  readonly heartIconSrc = 'https://www.figma.com/api/mcp/asset/2e77a9d2-a2c7-466e-b98c-7ae6a9cf4731';
-  readonly secureIconSrc = 'https://www.figma.com/api/mcp/asset/c241ebe6-2168-42ba-88ca-9419d680a372';
-  readonly flagIconSrc = 'https://www.figma.com/api/mcp/asset/b7407411-3539-4e2f-8d0f-ba71d8940013';
+  readonly newsletterIconSrc = 'https://www.figma.com/api/mcp/asset/22bd0d45-f838-470f-8570-8cde133dfcca';
+  readonly emailIconSrc = 'https://www.figma.com/api/mcp/asset/acec94da-1cea-4c74-a3b4-76511a138a21';
+  readonly arrowIconSrc = 'https://www.figma.com/api/mcp/asset/a5178afc-6d7a-4e8e-a7f2-ced3cf65d58e';
+  readonly logoSrc = 'https://www.figma.com/api/mcp/asset/4f1e3953-9d6f-4d8c-98f9-2f2adf2519e3';
+  readonly phoneIconSrc = 'https://www.figma.com/api/mcp/asset/7b8763b5-4659-4302-a095-7cb213f3d4d0';
+  readonly emailContactIconSrc = 'https://www.figma.com/api/mcp/asset/7229c57b-0194-45af-8f73-63538ddbfba4';
+  readonly locationIconSrc = 'https://www.figma.com/api/mcp/asset/bdf75a39-b4fa-4c92-953b-e68ad61fbf2c';
+  readonly facebookIconSrc = 'https://www.figma.com/api/mcp/asset/b0a4d851-d82f-44ef-8607-8eae0c126f3f';
+  readonly twitterIconSrc = 'https://www.figma.com/api/mcp/asset/74da799f-40b0-464c-889d-c417f41c592d';
+  readonly instagramIconSrc = 'https://www.figma.com/api/mcp/asset/9a924755-77fd-417d-84b6-45dc422df3d6';
+  readonly linkedinIconSrc = 'https://www.figma.com/api/mcp/asset/3aaf3466-3cd5-45de-8221-43bf4c13bd58';
+  readonly youtubeIconSrc = 'https://www.figma.com/api/mcp/asset/c3307ce8-6f2d-4d7b-9a8e-b493df363f2b';
+  readonly heartIconSrc = 'https://www.figma.com/api/mcp/asset/06dca3f4-120f-4a74-aef5-511cbea0299c';
+  readonly secureIconSrc = 'https://www.figma.com/api/mcp/asset/aae9cf77-a94d-4f82-841b-c73e9e91646d';
+  readonly flagIconSrc = 'https://www.figma.com/api/mcp/asset/822863cb-ae9a-42df-a097-510b2ee1cb53';
 }
