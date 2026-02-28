@@ -386,7 +386,6 @@
 
 .footer__right-section {
   display: flex;
-  gap: 300px;
   align-items: flex-start;
   position: relative;
   flex-shrink: 0;
