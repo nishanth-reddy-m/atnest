@@ -26,6 +26,8 @@ export class HomeRealStoriesComponent {
 
   readonly checkIconSrc = 'https://www.figma.com/api/mcp/asset/4144c237-b975-43de-8f2b-973e3b41e451';
   readonly shieldIconSrc = 'https://www.figma.com/api/mcp/asset/5c8ae9db-da19-493e-95ba-df13e59f31fd';
+  readonly wifiIconSrc = 'https://www.figma.com/api/mcp/asset/1783a46e-f995-4dfe-9511-83a790032ce1';
+  readonly checkmarkIconSrc = 'https://www.figma.com/api/mcp/asset/708866e1-0859-43b6-8f3d-48ce43150608';
   
   readonly mainReview = {
     quote: '"Top-class amenities and extremely professional staff. My stay was peaceful and very productive."',
