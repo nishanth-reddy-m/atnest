@@ -372,7 +372,7 @@
 .real-stories__side-row {
   display: flex;
   gap: 24px;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .stat-card {
@@ -596,9 +596,9 @@
 
 .verified-stays-card__icon-img {
   position: absolute;
-  inset: -5% -6.25%;
-  width: 115%;
-  height: 110%;
+  inset: 30% 25%;
+  width: 50%;
+  height: 45%;
   display: block;
   max-width: none;
 }
@@ -612,9 +612,9 @@
 
 .verified-stays-card__shield-img {
   position: absolute;
-  inset: -25% -16.67%;
-  width: 150%;
-  height: 133.33%;
+  inset: 20% 30%;
+  width: 50%;
+  height: 45%;
   display: block;
   max-width: none;
 }
@@ -834,6 +834,136 @@
   height: 100%;
   display: block;
   max-width: none;
+}
+
+.booking-status-card {
+  background: white;
+  border: 1px solid #f3f4f6;
+  border-radius: 32px;
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1), 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1px 25px 1px 25px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.booking-status-card__timestamp {
+  height: 19.195px;
+  width: 196.672px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.booking-status-card__timestamp-content {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.booking-status-card__status-dot {
+  background: #00c950;
+  opacity: 0.81;
+  border-radius: 999px;
+  width: 8px;
+  height: 8px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.booking-status-card__timestamp-text {
+  font-family: var(--font-sans);
+  font-weight: var(--font-semibold);
+  font-size: 12px;
+  line-height: 19.2px;
+  color: #99a1af;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 0;
+  position: absolute;
+  left: 16px;
+  top: 0;
+  height: 19.195px;
+  width: 71.586px;
+}
+
+.booking-status-card__content {
+  height: 44.797px;
+  width: 196.672px;
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.booking-status-card__avatars {
+  height: 32px;
+  width: 72px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.booking-status-card__avatar {
+  background: #e5e7eb;
+  border: 2px solid white;
+  border-radius: 999px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+
+.booking-status-card__avatar--overlap {
+  left: 20px;
+}
+
+.booking-status-card__avatar--overlap-2 {
+  left: 40px;
+}
+
+.booking-status-card__avatar-text {
+  font-family: var(--font-sans);
+  font-weight: var(--font-bold);
+  font-size: 10px;
+  line-height: 15px;
+  color: #6a7282;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.booking-status-card__booking-info {
+  flex: 1 0 0;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+  height: 44.797px;
+}
+
+.booking-status-card__booking-text {
+  font-family: var(--font-sans);
+  font-weight: var(--font-normal);
+  font-size: 14px;
+  line-height: 22.4px;
+  color: #1a1a1a;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 78px;
 }
 
 @media (max-width: 1700px) {
