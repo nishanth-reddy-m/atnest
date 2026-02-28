@@ -1,9 +1,52 @@
 <div class="hero-amenities">
-  <button
-    *ngFor="let amenity of amenities()"
-    type="button"
-    class="hero-amenity"
-  >
-    <span class="hero-amenity-icon">{{ amenity.icon }}</span>
-  </button>
+  <div class="hero-amenity">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="hero-amenity-icon">
+      <path d="M10 16.6665H10.0083" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1.66602 7.35004C3.95778 5.30023 6.92463 4.16699 9.99935 4.16699C13.0741 4.16699 16.0409 5.30023 18.3327 7.35004" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M4.16602 10.7156C5.72376 9.18875 7.81808 8.3335 9.99935 8.3335C12.1806 8.3335 14.2749 9.18875 15.8327 10.7156" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M7.08398 13.6911C7.86285 12.9276 8.91001 12.5 10.0007 12.5C11.0913 12.5 12.1384 12.9276 12.9173 13.6911" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <div class="hero-amenity">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="hero-amenity-icon">
+      <path d="M13.3325 1.6665L11.4158 3.58317C10.9577 4.05049 10.7012 4.67879 10.7012 5.33317C10.7012 5.98755 10.9577 6.61585 11.4158 7.08317L12.9158 8.58317C13.3831 9.04124 14.0114 9.29781 14.6658 9.29781C15.3202 9.29781 15.9485 9.04124 16.4158 8.58317L18.3325 6.6665" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.4997 12.5L2.74973 2.75C2.41713 3.07588 2.1529 3.46485 1.97252 3.89413C1.79213 4.3234 1.69922 4.78436 1.69922 5.25C1.69922 5.71564 1.79213 6.1766 1.97252 6.60587C2.1529 7.03515 2.41713 7.42412 2.74973 7.75L8.83306 13.8333C9.4164 14.4167 10.4997 14.4167 11.1664 13.8333L12.4997 12.5ZM12.4997 12.5L18.3331 18.3333" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1.75 18.1665L7.08333 12.9165" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15.8333 4.1665L10 9.99984" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <div class="hero-amenity">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="hero-amenity-icon">
+      <path d="M14.1673 1.6665L10.0007 5.83317L5.83398 1.6665" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16.666 5.8335H3.33268C2.41221 5.8335 1.66602 6.57969 1.66602 7.50016V16.6668C1.66602 17.5873 2.41221 18.3335 3.33268 18.3335H16.666C17.5865 18.3335 18.3327 17.5873 18.3327 16.6668V7.50016C18.3327 6.57969 17.5865 5.8335 16.666 5.8335Z" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <div class="hero-amenity">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="hero-amenity-icon">
+      <path d="M10.666 16.3335C10.8773 16.4919 11.1232 16.5979 11.3834 16.6427C11.6437 16.6875 11.9109 16.6698 12.163 16.591C12.415 16.5123 12.6448 16.3748 12.8333 16.1898C13.0218 16.0048 13.1636 15.7777 13.2472 15.5272C13.3307 15.2767 13.3534 15.0099 13.3136 14.7488C13.2738 14.4877 13.1725 14.2399 13.0181 14.0256C12.8637 13.8114 12.6606 13.6369 12.4255 13.5166C12.1904 13.3963 11.9301 13.3335 11.666 13.3335H1.66602" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M14.5827 6.66683C14.7958 6.38274 15.0779 6.15782 15.4024 6.01345C15.7268 5.86907 16.0828 5.81002 16.4364 5.84191C16.7901 5.87381 17.1298 5.99558 17.4232 6.19566C17.7166 6.39575 17.9539 6.66751 18.1127 6.98513C18.2716 7.30276 18.3465 7.65571 18.3306 8.01047C18.3146 8.36523 18.2082 8.71002 18.0215 9.0121C17.8348 9.31418 17.574 9.56353 17.2639 9.73646C16.9537 9.90939 16.6045 10.0002 16.2493 10.0002H1.66602" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M8.16602 3.66683C8.37729 3.50838 8.62318 3.4024 8.88345 3.35762C9.14371 3.31285 9.41089 3.33056 9.66296 3.40931C9.91504 3.48805 10.1448 3.62556 10.3333 3.81052C10.5218 3.99548 10.6636 4.22258 10.7472 4.47312C10.8307 4.72365 10.8534 4.99044 10.8136 5.25151C10.7738 5.51258 10.6725 5.76044 10.5181 5.97468C10.3637 6.18892 10.1606 6.3634 9.92548 6.48374C9.69041 6.60407 9.4301 6.66683 9.16602 6.66683H1.66602" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <div class="hero-amenity">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="hero-amenity-icon">
+      <path d="M9.99935 18.3333C11.5464 18.3333 13.0302 17.7188 14.1241 16.6248C15.2181 15.5308 15.8327 14.0471 15.8327 12.5C15.8327 10.8333 14.9993 9.25 13.3327 7.91667C11.666 6.58333 10.416 4.58333 9.99935 2.5C9.58268 4.58333 8.33268 6.58333 6.66602 7.91667C4.99935 9.25 4.16602 10.8333 4.16602 12.5C4.16602 14.0471 4.7806 15.5308 5.87456 16.6248C6.96852 17.7188 8.45225 18.3333 9.99935 18.3333Z" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <div class="hero-amenity">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="hero-amenity-icon">
+      <path d="M15.8327 14.1668H17.4993C17.9993 14.1668 18.3327 13.8335 18.3327 13.3335V10.8335C18.3327 10.0835 17.7493 9.41683 17.0827 9.25016C15.5827 8.8335 13.3327 8.3335 13.3327 8.3335C13.3327 8.3335 12.2493 7.16683 11.4993 6.41683C11.0827 6.0835 10.5827 5.8335 9.99935 5.8335H4.16602C3.66602 5.8335 3.24935 6.16683 2.99935 6.5835L1.83268 9.00016C1.72233 9.32202 1.66602 9.65992 1.66602 10.0002V13.3335C1.66602 13.8335 1.99935 14.1668 2.49935 14.1668H4.16602" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M5.83268 15.8333C6.75316 15.8333 7.49935 15.0871 7.49935 14.1667C7.49935 13.2462 6.75316 12.5 5.83268 12.5C4.91221 12.5 4.16602 13.2462 4.16602 14.1667C4.16602 15.0871 4.91221 15.8333 5.83268 15.8333Z" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M7.5 14.1665H12.5" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M14.1667 15.8333C15.0871 15.8333 15.8333 15.0871 15.8333 14.1667C15.8333 13.2462 15.0871 12.5 14.1667 12.5C13.2462 12.5 12.5 13.2462 12.5 14.1667C12.5 15.0871 13.2462 15.8333 14.1667 15.8333Z" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <div class="hero-amenity">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="hero-amenity-icon">
+      <path d="M8.33398 1.6665V3.33317" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M11.666 1.6665V3.33317" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13.3333 6.6665C13.5543 6.6665 13.7663 6.7543 13.9226 6.91058C14.0789 7.06686 14.1667 7.27882 14.1667 7.49984V14.1665C14.1667 15.0506 13.8155 15.8984 13.1904 16.5235C12.5652 17.1486 11.7174 17.4998 10.8333 17.4998H5.83333C4.94928 17.4998 4.10143 17.1486 3.47631 16.5235C2.85119 15.8984 2.5 15.0506 2.5 14.1665V7.49984C2.5 7.27882 2.5878 7.06686 2.74408 6.91058C2.90036 6.7543 3.11232 6.6665 3.33333 6.6665H15C15.8841 6.6665 16.7319 7.01769 17.357 7.64281C17.9821 8.26794 18.3333 9.11578 18.3333 9.99984C18.3333 10.8839 17.9821 11.7317 17.357 12.3569C16.7319 12.982 15.8841 13.3332 15 13.3332H14.1667" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M5 1.6665V3.33317" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
 </div>
