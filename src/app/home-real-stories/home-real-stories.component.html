@@ -33,7 +33,7 @@
         </div>
 
         <p class="review-card__quote">
-          {{ mainReview?.quote }}
+          {{ mainReview.quote }}
         </p>
 
         <div class="review-card__quote-mark" aria-hidden="true">
@@ -42,14 +42,14 @@
 
         <div class="review-card__footer">
           <div class="review-card__person">
-            <div class="review-card__avatar" aria-hidden="true">{{ mainReview?.initials }}</div>
+            <div class="review-card__avatar" aria-hidden="true">{{ mainReview.initials }}</div>
             <div class="review-card__person-meta">
-              <div class="review-card__person-name">{{ mainReview?.personName }}</div>
-              <div class="review-card__person-role">{{ mainReview?.personRole }}</div>
+              <div class="review-card__person-name">{{ mainReview.personName }}</div>
+              <div class="review-card__person-role">{{ mainReview.personRole }}</div>
             </div>
           </div>
 
-          <div class="review-card__verified" *ngIf="mainReview?.verified">Verified</div>
+          <div class="review-card__verified" *ngIf="mainReview.verified">Verified</div>
         </div>
       </article>
 
@@ -85,6 +85,36 @@
 
             <p class="highlight-card__quote">"The best thing about &#64;nest is the vibe. It truly feels like ..."</p>
           </article>
+          
+        </div>
+
+        <div class="verified-stays-card" data-name="Container" data-node-id="529:1453">
+          <div class="verified-stays-card__header" data-name="Container" data-node-id="529:1454">
+            <div class="verified-stays-card__icon-container" data-name="Container" data-node-id="529:1455">
+              <div class="verified-stays-card__icon-content" data-name="Icon" data-node-id="529:1456">
+                <div class="verified-stays-card__icon-vector" data-name="Vector" data-node-id="529:1457">
+                  <img [src]="checkIconSrc" alt="" class="verified-stays-card__icon-img" />
+                </div>
+                <div class="verified-stays-card__icon-shield" data-name="Vector" data-node-id="529:1458">
+                  <img [src]="shieldIconSrc" alt="" class="verified-stays-card__shield-img" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="verified-stays-card__badge" data-name="Text" data-node-id="529:1459">
+              <p class="verified-stays-card__badge-text" data-node-id="529:1460">100% Safe</p>
+            </div>
+          </div>
+
+          <div class="verified-stays-card__content" data-name="Container" data-node-id="529:1461">
+            <div class="verified-stays-card__title-container" data-name="Paragraph" data-node-id="529:1462">
+              <p class="verified-stays-card__title" data-node-id="529:1463">Verified Stays</p>
+            </div>
+            
+            <div class="verified-stays-card__subtitle-container" data-name="Paragraph" data-node-id="529:1464">
+              <p class="verified-stays-card__subtitle" data-node-id="529:1465">All guests identity checked</p>
+            </div>
+          </div>
         </div>
 
         <div class="real-stories__side-row">

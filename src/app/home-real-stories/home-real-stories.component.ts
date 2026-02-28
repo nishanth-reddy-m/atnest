@@ -24,6 +24,9 @@ export class HomeRealStoriesComponent {
   readonly heroImageSrc = 'https://www.figma.com/api/mcp/asset/8184d1a8-a1fd-4be1-85ab-aed6b5146ac1';
   readonly quoteMarkSrc = 'https://www.figma.com/api/mcp/asset/797d0157-7fa3-4beb-8acc-df23e4b7aa71';
 
+  readonly checkIconSrc = 'https://www.figma.com/api/mcp/asset/4144c237-b975-43de-8f2b-973e3b41e451';
+  readonly shieldIconSrc = 'https://www.figma.com/api/mcp/asset/5c8ae9db-da19-493e-95ba-df13e59f31fd';
+  
   readonly mainReview = {
     quote: '"Top-class amenities and extremely professional staff. My stay was peaceful and very productive."',
     personName: 'Vikram Singh',
@@ -31,5 +34,13 @@ export class HomeRealStoriesComponent {
     initials: 'VS',
     verified: true
   };
+
+  readonly stats = [
+    { count: 'U1', label: 'Just Now' },
+    { count: 'U2', label: 'Just Now' },
+    { count: 'U3', label: 'Just Now' }
+  ];
+  
+  readonly bookedToday = '+12 booked today';
 
 }
