@@ -8,14 +8,12 @@
 .hero-amenity {
   width: 2.75rem;
   height: 2.75rem;
-  border-radius: 999px;
-  border: none;
-  background: var(--atnest-bg);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   display: inline-flex;
+  border-radius: 0.9375rem;
+  background: #FFF;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 
 .hero-amenity-icon {
