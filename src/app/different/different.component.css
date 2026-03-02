@@ -206,7 +206,7 @@
 
   border-radius: 999px;
 
-  background: rgba(242, 102, 34, 0.12);
+  background: var(--atnest-primary-light);
 
 }
 
