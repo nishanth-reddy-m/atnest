@@ -8,7 +8,63 @@
         [class.property-type-card--highlighted]="card.highlighted"
       >
         <div class="property-type-card__icon" aria-hidden="true">
-          <img [src]="card.iconSrc" alt="" />
+          <!-- Co-Living/PG Icon -->
+          <svg *ngIf="card.title === 'Co-Living/PG'" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none" class="property-type-card__icon-svg">
+            <defs>
+              <linearGradient id="coliving-gradient" x1="60" y1="10" x2="60" y2="110" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFF5F0"/>
+                <stop offset="1" stop-color="#FFE8DC"/>
+              </linearGradient>
+            </defs>
+            <path d="M54.9991 12.8869C58.0932 11.1005 61.9053 11.1005 64.9993 12.8869L98.2993 32.1132C101.393 33.8996 103.299 37.2008 103.299 40.7734V79.2266C103.299 82.7992 101.393 86.1004 98.2993 87.8868L64.9993 107.113C61.9053 108.9 58.0932 108.9 54.9991 107.113L21.6991 87.8868C18.6052 86.1004 16.6992 82.7992 16.6992 79.2266V40.7734C16.6992 37.2008 18.6052 33.8996 21.6991 32.1132L54.9991 12.8869Z" fill="white" stroke="var(--atnest-primary)" stroke-opacity="0.3" stroke-width="1.5"/>
+            <path d="M54.9991 12.8869C58.0932 11.1005 61.9053 11.1005 64.9993 12.8869L98.2993 32.1132C101.393 33.8996 103.299 37.2008 103.299 40.7734V79.2266C103.299 82.7992 101.393 86.1004 98.2993 87.8868L64.9993 107.113C61.9053 108.9 58.0932 108.9 54.9991 107.113L21.6991 87.8868C18.6052 86.1004 16.6992 82.7992 16.6992 79.2266V40.7734C16.6992 37.2008 18.6052 33.8996 21.6991 32.1132L54.9991 12.8869Z" fill="url(#coliving-gradient)" fill-opacity="0.2"/>
+            <path d="M47.5 80.4274V42.9274C47.5 41.8223 47.939 40.7625 48.7204 39.9811C49.5018 39.1997 50.5616 38.7607 51.6667 38.7607H68.3333C69.4384 38.7607 70.4982 39.1997 71.2796 39.9811C72.061 40.7625 72.5 41.8223 72.5 42.9274V80.4274H47.5Z" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M47.4993 59.5938H43.3327C42.2276 59.5938 41.1678 60.0327 40.3864 60.8141C39.605 61.5955 39.166 62.6553 39.166 63.7604V76.2604C39.166 77.3655 39.605 78.4253 40.3864 79.2067C41.1678 79.9881 42.2276 80.4271 43.3327 80.4271H47.4993" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M72.5 53.3438H76.6667C77.7717 53.3438 78.8315 53.7827 79.6129 54.5641C80.3943 55.3455 80.8333 56.4053 80.8333 57.5104V76.2604C80.8333 77.3655 80.3943 78.4253 79.6129 79.2067C78.8315 79.9881 77.7717 80.4271 76.6667 80.4271H72.5" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M55.834 47.0938H64.1673" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M55.834 55.4277H64.1673" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M55.834 63.7598H64.1673" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M55.834 72.0938H64.1673" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <!-- Hotels Icon -->
+          <svg *ngIf="card.title === 'Hotels'" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none" class="property-type-card__icon-svg">
+            <defs>
+              <linearGradient id="hotels-gradient" x1="60" y1="10" x2="60" y2="110" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFF5F0"/>
+                <stop offset="1" stop-color="#FFE8DC"/>
+              </linearGradient>
+            </defs>
+            <path d="M54.9991 12.8869C58.0932 11.1005 61.9053 11.1005 64.9993 12.8869L98.2993 32.1132C101.393 33.8996 103.299 37.2008 103.299 40.7734V79.2266C103.299 82.7992 101.393 86.1004 98.2993 87.8868L64.9993 107.113C61.9053 108.9 58.0932 108.9 54.9991 107.113L21.6991 87.8868C18.6052 86.1004 16.6992 82.7992 16.6992 79.2266V40.7734C16.6992 37.2008 18.6052 33.8996 21.6991 32.1132L54.9991 12.8869Z" fill="white" stroke="var(--atnest-primary)" stroke-opacity="0.3" stroke-width="1.5"/>
+            <path d="M54.9991 12.8869C58.0932 11.1005 61.9053 11.1005 64.9993 12.8869L98.2993 32.1132C101.393 33.8996 103.299 37.2008 103.299 40.7734V79.2266C103.299 82.7992 101.393 86.1004 98.2993 87.8868L64.9993 107.113C61.9053 108.9 58.0932 108.9 54.9991 107.113L21.6991 87.8868C18.6052 86.1004 16.6992 82.7992 16.6992 79.2266V40.7734C16.6992 37.2008 18.6052 33.8996 21.6991 32.1132L54.9991 12.8869Z" fill="url(#hotels-gradient)" fill-opacity="0.2"/>
+            <path d="M39.166 76.2611V59.5944C39.166 58.4893 39.605 57.4295 40.3864 56.6481C41.1678 55.8667 42.2276 55.4277 43.3327 55.4277H76.666C77.7711 55.4277 78.8309 55.8667 79.6123 56.6481C80.3937 57.4295 80.8327 58.4893 80.8327 59.5944V76.2611" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M43.334 55.4277V47.0944C43.334 45.9893 43.773 44.9295 44.5544 44.1481C45.3358 43.3667 46.3956 42.9277 47.5007 42.9277H72.5006C73.6057 42.9277 74.6655 43.3667 75.4469 44.1481C76.2283 44.9295 76.6673 45.9893 76.6673 47.0944V55.4277" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M60 42.9268V55.4268" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M39.166 72.0938H80.8327" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <!-- Service Apartments Icon -->
+          <svg *ngIf="card.title === 'Service Apartments'" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none" class="property-type-card__icon-svg">
+            <defs>
+              <linearGradient id="service-gradient" x1="60" y1="10" x2="60" y2="110" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFF5F0"/>
+                <stop offset="1" stop-color="#FFE8DC"/>
+              </linearGradient>
+            </defs>
+            <path d="M54.9991 12.8869C58.0932 11.1005 61.9053 11.1005 64.9993 12.8869L98.2993 32.1132C101.393 33.8996 103.299 37.2008 103.299 40.7734V79.2266C103.299 82.7992 101.393 86.1004 98.2993 87.8868L64.9993 107.113C61.9053 108.9 58.0932 108.9 54.9991 107.113L21.6991 87.8868C18.6052 86.1004 16.6992 82.7992 16.6992 79.2266V40.7734C16.6992 37.2008 18.6052 33.8996 21.6991 32.1132L54.9991 12.8869Z" fill="white" stroke="var(--atnest-primary)" stroke-opacity="0.3" stroke-width="1.5"/>
+            <path d="M54.9991 12.8869C58.0932 11.1005 61.9053 11.1005 64.9993 12.8869L98.2993 32.1132C101.393 33.8996 103.299 37.2008 103.299 40.7734V79.2266C103.299 82.7992 101.393 86.1004 98.2993 87.8868L64.9993 107.113C61.9053 108.9 58.0932 108.9 54.9991 107.113L21.6991 87.8868C18.6052 86.1004 16.6992 82.7992 16.6992 79.2266V40.7734C16.6992 37.2008 18.6052 33.8996 21.6991 32.1132L54.9991 12.8869Z" fill="url(#service-gradient)" fill-opacity="0.2"/>
+            <path d="M60 55.4268H60.0208" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M60 63.7607H60.0208" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M60 47.0938H60.0208" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M68.334 55.4277H68.3548" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M68.334 63.7598H68.3548" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M68.334 47.0938H68.3548" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M51.666 55.4277H51.6868" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M51.666 63.7598H51.6868" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M51.666 47.0938H51.6868" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M53.75 80.4271V74.1771C53.75 73.6245 53.9695 73.0946 54.3602 72.7039C54.7509 72.3132 55.2808 72.0938 55.8333 72.0938H64.1667C64.7192 72.0938 65.2491 72.3132 65.6398 72.7039C66.0305 73.0946 66.25 73.6245 66.25 74.1771V80.4271" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M72.5007 38.7598H47.5007C45.1995 38.7598 43.334 40.6252 43.334 42.9264V76.2598C43.334 78.561 45.1995 80.4264 47.5007 80.4264H72.5007C74.8018 80.4264 76.6673 78.561 76.6673 76.2598V42.9264C76.6673 40.6252 74.8018 38.7598 72.5007 38.7598Z" stroke="var(--atnest-primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </div>
 
         <div class="property-type-card__header">
