@@ -48,13 +48,5 @@ export class HeaderComponent {
 
   ];
 
-
-
-  readonly logoSrc = 'assets/brand/logo.svg';
-
-  readonly searchIconSrc = 'assets/icons/header-search.svg';
-
-  readonly loginIconSrc = 'assets/icons/header-login.svg';
-
 }
 

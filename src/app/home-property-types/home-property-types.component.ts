@@ -21,20 +21,20 @@ export class HomePropertyTypesComponent {
     {
       title: 'Co-Living/PG',
       subtitle: 'Home away from home',
-      iconSrc: 'https://www.figma.com/api/mcp/asset/a4f65705-7c67-4ce8-88b9-37e0a432bbd1',
+      iconSrc: 'assets/icons/home-property-types/Co-Living.svg',
       items: ['Shared facilities', 'Daily meals', 'Housekeeping', 'Value added Services'],
     },
     {
       title: 'Hotels',
       subtitle: 'premium experiences within budget',
-      iconSrc: 'https://www.figma.com/api/mcp/asset/5f532a2d-237e-4d17-8c37-76db9187e355',
+      iconSrc: 'assets/icons/home-property-types/hotels.svg',
       items: ['Private rooms', 'Room service', 'Modern amenities'],
       highlighted: true,
     },
     {
       title: 'Service Apartments',
       subtitle: 'Premium long term stays',
-      iconSrc: 'https://www.figma.com/api/mcp/asset/f3e65f29-e06d-4b6b-9b94-c4005e30b0d9',
+      iconSrc: 'assets/icons/home-property-types/serviceApartments.svg',
       items: ['Fully furnished', 'Kitchen facilities', 'Long-term stays'],
     },
   ];
