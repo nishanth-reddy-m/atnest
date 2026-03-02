@@ -264,6 +264,13 @@
   display: block;
 }
 
+.story-card__img-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f26622 0%, #ffcbab 100%);
+  display: block;
+}
+
 .story-card__gradient {
   position: absolute;
   top: 0;

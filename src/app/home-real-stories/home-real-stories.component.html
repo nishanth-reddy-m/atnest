@@ -18,10 +18,14 @@
 
       <div class="real-stories__nav" aria-hidden="true">
         <button type="button" class="real-stories__nav-btn real-stories__nav-btn--light">
-          <img [src]="arrowLeftSrc" alt="" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M15 18L9 12L15 6" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </button>
         <button type="button" class="real-stories__nav-btn real-stories__nav-btn--dark">
-          <img [src]="arrowRightSrc" alt="" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M9 18L15 12L9 6" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </button>
       </div>
     </div>
@@ -29,7 +33,9 @@
     <div class="real-stories__grid">
       <article class="review-card review-card--main">
         <div class="review-card__stars" aria-hidden="true">
-          <img class="review-card__star" *ngFor="let _ of [1, 2, 3, 4, 5]" [src]="starSrc" alt="" />
+          <svg class="review-card__star" *ngFor="let _ of [1, 2, 3, 4, 5]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10 1.5L12.5 7.5L19 8L14.5 12L16 18.5L10 15L4 18.5L5.5 12L1 8L7.5 7.5L10 1.5Z" fill="var(--atnest-primary)" stroke="var(--atnest-primary)" stroke-width="0.5"/>
+          </svg>
         </div>
 
         <p class="review-card__quote">
@@ -37,7 +43,12 @@
         </p>
 
         <div class="review-card__quote-mark" aria-hidden="true">
-          <img [src]="quoteMarkSrc" alt="" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <path d="M10 20C10 15 12 10 15 5C17 8 18 12 18 15C18 18 17 20 15 22C13 24 11 24 10 20Z" fill="var(--atnest-primary)" opacity="0.2"/>
+            <path d="M22 20C22 15 24 10 27 5C29 8 30 12 30 15C30 18 29 20 27 22C25 24 23 24 22 20Z" fill="var(--atnest-primary)" opacity="0.2"/>
+            <path d="M10 20C10 25 12 30 15 35C13 32 12 28 12 25C12 22 13 20 15 18C17 16 19 16 20 20Z" fill="var(--atnest-primary)" opacity="0.3"/>
+            <path d="M22 20C22 25 24 30 27 35C25 32 24 28 24 25C24 22 25 20 27 18C29 16 31 16 32 20Z" fill="var(--atnest-primary)" opacity="0.3"/>
+          </svg>
         </div>
 
         <div class="review-card__footer">
@@ -55,7 +66,7 @@
 
       <article class="story-card">
         <div class="story-card__media">
-          <img class="story-card__img" [src]="heroImageSrc" alt="" />
+          <div class="story-card__img-placeholder"></div>
           <div class="story-card__gradient"></div>
           <div class="story-card__pill">Kokapet, Hyderabad</div>
           
@@ -65,11 +76,16 @@
               
               <div class="story-card__meta">
                 <div class="story-card__meta-item">
-                  <img class="story-card__meta-icon" [src]="starSrc" alt="" />
+                  <svg class="story-card__meta-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M8 1L10 5L14 5.5L11 8.5L12 13L8 11L4 13L5 8.5L2 5.5L6 5L8 1Z" fill="var(--atnest-primary)" stroke="var(--atnest-primary)" stroke-width="0.4"/>
+                  </svg>
                   <span>189 Reviews</span>
                 </div>
                 <div class="story-card__meta-item">
-                  <img class="story-card__meta-icon" [src]="safetyShieldSrc" alt="" />
+                  <svg class="story-card__meta-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M8 1C4.5 1 2 3.5 2 7C2 10.5 8 15 8 15C8 15 14 10.5 14 7C14 3.5 11.5 1 8 1Z" fill="var(--atnest-primary)" stroke="var(--atnest-primary)" stroke-width="0.4"/>
+                    <path d="M8 4C9.5 4 10.5 5 10.5 6.5C10.5 8 9.5 9 8 9C6.5 9 5.5 8 5.5 6.5C5.5 5 6.5 4 8 4Z" fill="white" stroke="var(--atnest-primary)" stroke-width="0.3"/>
+                  </svg>
                   <span>Verified Property</span>
                 </div>
               </div>
@@ -83,7 +99,9 @@
           <article class="stat-card">
             <div class="stat-card__value">4.8</div>
             <div class="stat-card__stars" aria-hidden="true">
-              <img class="stat-card__star" *ngFor="let _ of [1, 2, 3, 4, 5]" [src]="starSrc" alt="" />
+              <svg class="stat-card__star" *ngFor="let _ of [1, 2, 3, 4, 5]" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M6 1L7.5 4.5L11 4.5L8.5 7L9.5 11L6 9L2.5 11L3.5 7L1 4.5L4.5 4.5L6 1Z" fill="var(--atnest-primary)" stroke="var(--atnest-primary)" stroke-width="0.3"/>
+              </svg>
             </div>
             <div class="stat-card__label">Overall Rating</div>
           </article>
@@ -105,10 +123,15 @@
               <div class="verified-stays-card__icon-container" data-name="Container" data-node-id="529:1455">
                 <div class="verified-stays-card__icon-content" data-name="Icon" data-node-id="529:1456">
                   <div class="verified-stays-card__icon-vector" data-name="Vector" data-node-id="529:1457">
-                    <img [src]="checkIconSrc" alt="" class="verified-stays-card__icon-img" />
+                    <svg class="verified-stays-card__icon-img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M20 6L9 17L4 12" stroke="var(--atnest-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </div>
                   <div class="verified-stays-card__icon-shield" data-name="Vector" data-node-id="529:1458">
-                    <img [src]="shieldIconSrc" alt="" class="verified-stays-card__shield-img" />
+                    <svg class="verified-stays-card__shield-img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 1L3 5V11C3 16 12 21 12 21C12 21 21 16 21 11V5L12 1Z" fill="var(--atnest-primary)" stroke="var(--atnest-primary)" stroke-width="0.5"/>
+                      <path d="M8 11L11 14L16 9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -151,7 +174,7 @@
               </div>
               
               <div class="booking-status-card__booking-info" data-name="Paragraph" data-node-id="529:1491">
-                <p class="booking-status-card__booking-text" data-node-id="529:1492">+12 booked today</p>
+                <p class="booking-status-card__booking-text" data-node-id="529:1492">{{ bookedToday }}</p>
               </div>
             </div>
           </article>
@@ -170,7 +193,9 @@
 
           <div class="micro-review__body">
             <div class="micro-review__stars" aria-hidden="true">
-              <img class="micro-review__star" *ngFor="let _ of [1, 2, 3, 4, 5]" [src]="starSrc" alt="" />
+              <svg class="micro-review__star" *ngFor="let _ of [1, 2, 3, 4, 5]" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M6 1L7.5 4.5L11 4.5L8.5 7L9.5 11L6 9L2.5 11L3.5 7L1 4.5L4.5 4.5L6 1Z" fill="var(--atnest-primary)" stroke="var(--atnest-primary)" stroke-width="0.3"/>
+              </svg>
             </div>
             <div class="micro-review__quote">"Great location near IT parks. The amenities are excellent."</div>
           </div>
@@ -183,7 +208,9 @@
 
           <div class="micro-review__body">
             <div class="micro-review__stars" aria-hidden="true">
-              <img class="micro-review__star" *ngFor="let _ of [1, 2, 3, 4, 5]" [src]="starSrc" alt="" />
+              <svg class="micro-review__star" *ngFor="let _ of [1, 2, 3, 4, 5]" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M6 1L7.5 4.5L11 4.5L8.5 7L9.5 11L6 9L2.5 11L3.5 7L1 4.5L4.5 4.5L6 1Z" fill="var(--atnest-primary)" stroke="var(--atnest-primary)" stroke-width="0.3"/>
+              </svg>
             </div>
             <div class="micro-review__quote">"The best thing about &#64;nest is the vibe. It truly feels like ..."</div>
           </div>
