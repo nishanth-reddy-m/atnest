@@ -127,8 +127,8 @@
 
 .real-stories__grid {
   display: grid;
-  grid-template-columns: 517.328px 486px 1fr;
-  grid-template-rows: 524px 110px;
+  grid-template-columns: minmax(400px, 1fr) minmax(300px, 1fr) minmax(250px, 1fr);
+  grid-template-rows: auto auto;
   gap: 24px;
   align-items: start;
 }
@@ -159,7 +159,7 @@
 }
 
 .review-card__quote {
-  margin: 24px 0 250px;
+  margin: 25px 0 250px 0;
   font-family: var(--font-sans);
   font-weight: var(--font-medium);
   font-size: 24px;
@@ -169,19 +169,20 @@
 
 .review-card__quote-mark {
   position: absolute;
-  right: 32px;
-  top: 220px;
-  width: 184px;
-  height: 184px;
+  right: 30px;
+  top: 250px;
+  width: 150px;
+  height: 150px;
   opacity: 0.1;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 16px;
   z-index: 0;
 }
 
 .review-card__quote-mark img {
-  width: 100%;
+  width: 50%;
   height: 100%;
   object-fit: contain;
 }
@@ -469,7 +470,7 @@
   grid-column: 1 / -1;
   grid-row: 2;
   display: grid;
-  grid-template-columns: 1fr 382px 382px;
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   align-items: stretch;
 }
@@ -982,8 +983,32 @@
 
 @media (max-width: 1200px) {
   .real-stories__grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .review-card {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .story-card {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .real-stories__side {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .real-stories__micro {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .story-card__media {
@@ -991,10 +1016,81 @@
   }
 
   .real-stories__side-row {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .real-stories__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+  }
+
+  .review-card,
+  .story-card,
+  .real-stories__side {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .real-stories__side {
+    display: flex;
     flex-direction: column;
+    gap: 16px;
   }
 
   .real-stories__micro {
+    grid-column: 1;
+    grid-row: auto;
     grid-template-columns: 1fr;
+  }
+
+  .micro-review {
+    height: auto;
+    min-height: 110px;
+  }
+
+  .real-stories__side-row {
+    flex-direction: column;
+  }
+
+  .stat-card,
+  .highlight-card,
+  .verified-stays-card,
+  .booking-status-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .real-stories__inner {
+    padding: 20px;
+  }
+
+  .real-stories__grid {
+    gap: 12px;
+  }
+
+  .review-card {
+    padding: 20px;
+  }
+
+  .micro-review {
+    padding: 16px;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .micro-review__avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .real-stories__nav {
+    flex-direction: column;
+    gap: 12px;
   }
 }
