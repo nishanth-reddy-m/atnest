@@ -24,7 +24,7 @@ interface PropertyCardModel {
 export class OurPropertiesComponent {
   readonly cards: readonly PropertyCardModel[] = [
     {
-      title: 'Voila Suites &#64;nest',
+      title: 'Voila Suites @nest',
       location: 'Madhapur',
       category: 'Service Apartments',
       sqft: '420 sqft',
@@ -36,7 +36,7 @@ export class OurPropertiesComponent {
       imageSrc: 'assets/images/properties/voila-suite.jpg',
     },
     {
-      title: 'Voila Suites &#64;nest',
+      title: 'Voila Suites @nest',
       location: 'Madhapur',
       category: 'Service Apartments',
       sqft: '420 sqft',
@@ -48,7 +48,7 @@ export class OurPropertiesComponent {
       imageSrc: 'assets/images/properties/voila-suite.jpg',
     },
     {
-      title: 'Voila Suites &#64;nest',
+      title: 'Voila Suites @nest',
       location: 'Madhapur',
       category: 'Service Apartments',
       sqft: '420 sqft',

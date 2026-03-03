@@ -165,7 +165,8 @@
   height: 22px;
   padding: 0 12px;
   border-radius: 999px;
-  background: rgba(242, 102, 34, 0.1);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+  background: var(--atnest-bg);
   color: var(--atnest-primary);
   border: 1px solid rgba(242, 102, 34, 0.2);
   font-family: var(--font-sans);
@@ -254,10 +255,9 @@
 }
 
 .property-card__pin {
-  width: 8px;
-  height: 8px;
+  width: 15px;
+  height: 15px;
   border-radius: 999px;
-  background: rgba(242, 102, 34, 0.35);
   display: inline-block;
 }
 
