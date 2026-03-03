@@ -606,9 +606,6 @@
 .footer__heart-icon {
   width: 12px;
   height: 12px;
-  position: absolute;
-  left: 88px;
-  top: 4px;
   flex-shrink: 0;
 }
 
