@@ -32,7 +32,7 @@
 }
 
 .property-type-card--highlighted {
-  box-shadow: 0px 0px 30px 0px rgba(242, 102, 34, 0.5);
+  box-shadow: var(--atnest-shadow);
 }
 
 .property-type-card__icon {
@@ -42,7 +42,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 9px 14px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--atnest-shadow);
   background: transparent;
   clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
 }
@@ -86,7 +86,7 @@
   width: 48px;
   height: 2px;
   border-radius: 999px;
-  background: rgba(242, 102, 34, 0.2);
+  background: var(--atnest-primary-light);
 }
 
 .property-type-card__list {

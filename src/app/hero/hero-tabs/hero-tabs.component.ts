@@ -15,12 +15,6 @@ export class HeroTabsComponent {
 
   readonly tabChange = output<HeroTab>();
 
-  readonly tabIcons: Record<HeroTab, string> = {
-    'Co Living': 'assets/icons/tab-coliving.svg',
-    Hotels: 'assets/icons/tab-hotels.svg',
-    'Service Apartments': 'assets/icons/tab-service-apartments.svg',
-  };
-
   onTabClick(tab: HeroTab): void {
     this.tabChange.emit(tab);
   }

@@ -11,14 +11,29 @@
 
       <div class="social-wall__social-links">
         <a href="#" class="social-wall__social-link">
-          <img class="social-wall__social-icon" [src]="instagramIconSrc" alt="" />
+          <svg class="social-wall__social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <g clip-path="url(#clip0_0_12)">
+              <path d="M14.166 1.66602H5.83268C3.5315 1.66602 1.66602 3.5315 1.66602 5.83268V14.166C1.66602 16.4672 3.5315 18.3327 5.83268 18.3327H14.166C16.4672 18.3327 18.3327 16.4672 18.3327 14.166V5.83268C18.3327 3.5315 16.4672 1.66602 14.166 1.66602Z" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13.3337 9.47525C13.4366 10.1688 13.3181 10.8771 12.9952 11.4994C12.6723 12.1218 12.1614 12.6264 11.5351 12.9416C10.9088 13.2569 10.1991 13.3666 9.5069 13.2552C8.81468 13.1438 8.17521 12.817 7.67944 12.3212C7.18367 11.8255 6.85685 11.186 6.74546 10.4938C6.63408 9.80154 6.74379 9.09183 7.05901 8.46556C7.37423 7.8393 7.8789 7.32837 8.50123 7.00545C9.12356 6.68254 9.83187 6.56407 10.5254 6.66692C11.2328 6.77182 11.8878 7.10147 12.3935 7.60717C12.8992 8.11288 13.2288 8.76782 13.3337 9.47525Z" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14.584 5.41602H14.5923" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_0_12">
+                <rect width="20" height="20" fill="var(--atnest-bg)"/>
+              </clipPath>
+            </defs>
+          </svg>
           <span class="social-wall__social-text">Follow on Instagram</span>
         </a>
 
         <div class="social-wall__divider">|</div>
 
         <a href="#" class="social-wall__social-link">
-          <img class="social-wall__social-icon" [src]="facebookIconSrc" alt="" />
+          <svg class="social-wall__social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <g>
+              <path d="M15.0007 1.66602H12.5007C11.3956 1.66602 10.3358 2.105 9.55437 2.8864C8.77297 3.66781 8.33398 4.72761 8.33398 5.83268V8.33268H5.83398V11.666H8.33398V18.3327H11.6673V11.666H14.1673L15.0007 8.33268H11.6673V5.83268C11.6673 5.61167 11.7551 5.39971 11.9114 5.24343C12.0677 5.08715 12.2796 4.99935 12.5007 4.99935H15.0007V1.66602Z" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </svg>
           <span class="social-wall__social-text">Like on Facebook</span>
         </a>
       </div>
@@ -29,19 +44,26 @@
         <img class="social-wall__gallery-image" [src]="image" alt="" />
         
         <div class="social-wall__play-button" *ngIf="playIconTypes[i]">
-          <img 
-            class="social-wall__play-icon" 
-            [src]="playIconSrc" 
-            alt="" 
-          />
+          <svg class="social-wall__play-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <g clip-path="url(#clip0_0_6)">
+              <path d="M12.75 1.5H5.25C3.17893 1.5 1.5 3.17893 1.5 5.25V12.75C1.5 14.8211 3.17893 16.5 5.25 16.5H12.75C14.8211 16.5 16.5 14.8211 16.5 12.75V5.25C16.5 3.17893 14.8211 1.5 12.75 1.5Z" stroke="var(--atnest-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12.0008 8.52773C12.0933 9.15191 11.9867 9.78939 11.6961 10.3495C11.4055 10.9096 10.9456 11.3638 10.382 11.6475C9.81834 11.9312 9.17959 12.0299 8.5566 11.9297C7.9336 11.8294 7.35808 11.5353 6.91189 11.0891C6.46569 10.6429 6.17156 10.0674 6.07131 9.44439C5.97106 8.82139 6.06981 8.18265 6.3535 7.61901C6.6372 7.05537 7.0914 6.59553 7.6515 6.30491C8.21159 6.01428 8.84907 5.90767 9.47326 6.00023C10.1099 6.09464 10.6994 6.39132 11.1545 6.84646C11.6097 7.30159 11.9063 7.89103 12.0008 8.52773Z" stroke="var(--atnest-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13.125 4.875H13.1325" stroke="var(--atnest-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_0_6">
+                <rect width="18" height="18" fill="var(--atnest-bg)"/>
+              </clipPath>
+            </defs>
+          </svg>
         </div>
         
         <div class="social-wall__play-button" *ngIf="!playIconTypes[i]">
-          <img 
-            class="social-wall__play-icon" 
-            [src]="playIconAltSrc" 
-            alt="" 
-          />
+          <svg class="social-wall__play-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <g>
+              <path d="M13.5 1.5H11.25C10.2554 1.5 9.30161 1.89509 8.59835 2.59835C7.89509 3.30161 7.5 4.25544 7.5 5.25V7.5H5.25V10.5H7.5V16.5H10.5V10.5H12.75L13.5 7.5H10.5V5.25C10.5 5.05109 10.579 4.86032 10.7197 4.71967C10.8603 4.57902 11.0511 4.5 11.25 4.5H13.5V1.5Z" stroke="var(--atnest-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </svg>
         </div>
       </div>
     </div>

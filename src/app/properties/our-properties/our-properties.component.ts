@@ -62,6 +62,4 @@ export class OurPropertiesComponent {
   ];
 
   readonly underlineSrc = 'assets/icons/properties/underline-doodle.svg';
-  readonly hexHeadingSrc = 'assets/icons/properties/hex-heading.svg';
-  readonly hexHomeSrc = 'assets/icons/properties/hex-home.svg';
 }

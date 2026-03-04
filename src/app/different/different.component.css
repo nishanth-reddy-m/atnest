@@ -210,7 +210,11 @@
 
 }
 
-
+@media (max-width: 1800px) {
+  .different__art {
+    display: none;
+  }
+}
 
 @media (max-width: 1440px) {
 

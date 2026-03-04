@@ -235,15 +235,9 @@
 
   background: linear-gradient(180deg, var(--atnest-primary) 0%, var(--atnest-primary-hover) 100%);
 
-  box-shadow:
-
-    0px 10px 15px 0px rgba(242, 102, 34, 0.25),
-
-    0px 4px 6px 0px rgba(242, 102, 34, 0.25);
+  box-shadow: var(--atnest-shadow);
 
 }
-
-
 
 .header__action--primary:active {
 

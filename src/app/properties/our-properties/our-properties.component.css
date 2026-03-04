@@ -32,8 +32,8 @@
   height: 37.195px;
   width: 131.766px;
   border-radius: 999px;
-  background: rgba(242, 102, 34, 0.1);
-  border: 1px solid rgba(242, 102, 34, 0.2);
+  background: var(--atnest-primary-light);
+  border: 1px solid var(--atnest-primary);
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -113,9 +113,7 @@
   border-radius: 999px;
   border: 1.5px solid rgba(26, 26, 26, 0.8);
   background: rgba(255, 255, 255, 0.6);
-  box-shadow:
-    0px 10px 15px rgba(0, 0, 0, 0.08),
-    0px 4px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--atnest-shadow);
   font-family: var(--font-sans);
   font-weight: var(--font-semibold);
   font-size: 14px;
@@ -138,9 +136,7 @@
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(234, 234, 234, 0.7);
   border-radius: 24px;
-  box-shadow:
-    0px 20px 25px -5px rgba(0, 0, 0, 0.08),
-    0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--atnest-shadow);
   overflow: hidden;
 }
 
@@ -165,7 +161,7 @@
   height: 22px;
   padding: 0 12px;
   border-radius: 999px;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+  box-shadow: var(--atnest-shadow);
   background: var(--atnest-bg);
   color: var(--atnest-primary);
   border: 1px solid rgba(242, 102, 34, 0.2);
@@ -280,12 +276,12 @@
   height: 18px;
   padding: 0 8px;
   border-radius: 999px;
-  background: rgba(242, 102, 34, 0.08);
+  background: var(--atnest-primary-light);
   border: 1px solid rgba(242, 102, 34, 0.12);
   font-family: var(--font-sans);
   font-weight: var(--font-semibold);
   font-size: 10px;
-  color: rgba(242, 102, 34, 0.9);
+  color: var(--atnest-primary);
   display: inline-flex;
   align-items: center;
 }
@@ -303,7 +299,7 @@
   background: rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(234, 234, 234, 0.8);
   padding: 6px;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08), 0px 4px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--atnest-shadow);
 }
 
 .property-card__divider {
@@ -362,9 +358,7 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  box-shadow:
-    0px 10px 15px rgba(242, 102, 34, 0.25),
-    0px 4px 6px rgba(242, 102, 34, 0.25);
+  box-shadow: var(--atnest-shadow);
   cursor: pointer;
 }
 
@@ -380,7 +374,7 @@
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  background: #ffd1b5;
+  background: var(--atnest-primary-light);
 }
 
 .our-properties__dot--active {

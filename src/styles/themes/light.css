@@ -25,4 +25,7 @@
   --atnest-accent: #7675F3;
   --atnest-success: #10b981;
   --atnest-error: #ef4444;
+
+  /* Shadow – Global box shadow for consistent elevation */
+  --atnest-shadow: 0 10px 15px -3px rgba(242, 102, 34, 0.25), 0 4px 6px -4px rgba(242, 102, 34, 0.25);
 }

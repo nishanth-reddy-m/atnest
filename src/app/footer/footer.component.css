@@ -213,7 +213,7 @@
 }
 
 .footer__subscribe-btn {
-  background: linear-gradient(to right, #f26622, #d95211);
+  background: linear-gradient(to right, var(--atnest-primary), var(--atnest-primary-hover));
   display: flex;
   gap: 8px;
   align-items: center;
@@ -222,7 +222,7 @@
   padding: 13px 32px;
   position: relative;
   border-radius: 14px;
-  box-shadow: 0px 10px 15px -3px rgba(242, 102, 34, 0.3), 0px 4px 6px -4px rgba(242, 102, 34, 0.3);
+  box-shadow: var(--atnest-shadow);
   flex-shrink: 0;
   border: none;
   cursor: pointer;
@@ -231,7 +231,7 @@
 
 .footer__subscribe-btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0px 12px 18px -3px rgba(242, 102, 34, 0.4), 0px 6px 8px -4px rgba(242, 102, 34, 0.4);
+  box-shadow: var(--atnest-shadow);
 }
 
 .footer__subscribe-btn-content {
