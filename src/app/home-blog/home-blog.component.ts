@@ -20,10 +20,6 @@ interface BlogPost {
   styleUrl: './home-blog.component.css',
 })
 export class HomeBlogComponent {
-  readonly calendarIconSrc = 'https://www.figma.com/api/mcp/asset/e3181ecf-433a-4e8c-9e76-f2471b2f6502';
-  readonly arrowIconSrc = 'https://www.figma.com/api/mcp/asset/5ce6b614-967b-4ac0-8f84-40330824514b';
-  readonly userIconSrc = 'https://www.figma.com/api/mcp/asset/ac47ffd0-af47-47bc-a4bd-7765d2b77e05';
-
   readonly blogPosts: readonly BlogPost[] = [
     {
       id: '1',
@@ -37,7 +33,7 @@ export class HomeBlogComponent {
     },
     {
       id: '2',
-      title: 'The Rise of Digital Nomadism: Why &#64;nest is the Future',
+      title: 'The Rise of Digital Nomadism: Why @nest is the Future',
       description: 'With more people working remotely, the need for flexible, high-end housing is growing. Discover why we\'re the preferred choice...',
       imageSrc: 'https://www.figma.com/api/mcp/asset/65231479-84b8-4877-8a18-3c0384c33405',
       category: 'Trends',
