@@ -805,6 +805,20 @@
     padding: 20px;
   }
   
+  .footer__newsletter-form {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .footer__input-container {
+    width: 100%;
+  }
+  
+  .footer__subscribe-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
   .footer__newsletter-heading p {
     font-size: 24px;
     line-height: 30px;

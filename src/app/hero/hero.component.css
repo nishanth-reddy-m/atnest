@@ -74,7 +74,7 @@
 
   top: 0;
 
-  width: 528px;
+  width: 60%;
 
   height: 40px;
 
@@ -301,6 +301,18 @@
 
 
 @media (max-width: 768px) {
+
+  .hero-search-module {
+
+    display: none;
+
+  }
+
+  .hero-right {
+
+    display: none;
+
+  }
 
   .hero-right-inner {
 

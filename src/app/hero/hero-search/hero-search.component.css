@@ -1,7 +1,7 @@
 .hero-search {
   display: flex;
   align-items: center;
-  width: 675px;
+  width: 175%;
   gap: var(--space-2);
   padding: var(--space-2) var(--space-2) var(--space-2) var(--space-4);
 }
