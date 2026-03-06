@@ -1,8 +1,15 @@
 import { Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
-/**
- * Routing is minimal for now – the hero screen is rendered directly
- * by AppComponent. Additional pages can be added here later.
- */
-export const routes: Routes = [];
+export const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent,
+    title: 'ATNEST - Premium Hotels'
+  },
+  {
+    path: '**',
+    redirectTo: ''
+  }
+];
 

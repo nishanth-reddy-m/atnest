@@ -2,7 +2,7 @@
 
   <div class="header__container">
 
-    <a class="header__logo" href="#" aria-label="ATNEST">
+    <a class="header__logo" routerLink="/" aria-label="ATNEST">
 
       <svg class="header__logo-img" alt="ATNEST" xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 150 40" fill="none">
         <g clip-path="url(#clip0_474_3364)">
@@ -29,7 +29,7 @@
 
         [class.header__nav-link--active]="link.active"
 
-        [href]="link.href"
+        [routerLink]="link.href"
 
         >
 

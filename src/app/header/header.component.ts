@@ -1,8 +1,6 @@
 import { CommonModule } from '@angular/common';
-
 import { Component } from '@angular/core';
-
-
+import { RouterLink } from '@angular/router';
 
 interface NavLink {
 
@@ -14,15 +12,13 @@ interface NavLink {
 
 }
 
-
-
 @Component({
 
   selector: 'app-header',
 
   standalone: true,
 
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
 
   templateUrl: './header.component.html',
 
@@ -34,17 +30,17 @@ export class HeaderComponent {
 
   readonly navLinks: readonly NavLink[] = [
 
-    { label: 'Home', href: '#', active: true },
+    { label: 'Home', href: '/', active: true },
 
-    { label: 'Properties', href: '#properties' },
+    { label: 'Properties', href: '/properties' },
 
-    { label: 'About', href: '#about' },
+    { label: 'About', href: '/about' },
 
-    { label: 'Amenities', href: '#amenities' },
+    { label: 'Amenities', href: '/amenities' },
 
-    { label: 'Blog', href: '#blog' },
+    { label: 'Blog', href: '/blog' },
 
-    { label: 'Contact', href: '#contact' },
+    { label: 'Contact', href: '/contact' },
 
   ];
 
