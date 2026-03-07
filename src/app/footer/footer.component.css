@@ -782,6 +782,19 @@
     flex-direction: column;
     gap: 40px;
   }
+  .footer__newsletter-form {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .footer__input-container {
+    width: 100%;
+  }
+  
+  .footer__subscribe-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {

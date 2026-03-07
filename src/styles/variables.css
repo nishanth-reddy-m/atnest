@@ -13,7 +13,7 @@
   --space-16: 4rem;     /* 64px */
 
   /* Layout */
-  --content-max-width: 75rem;   /* 1200px */
+  --content-max-width: 100rem;   /* 1200px */
   --content-gutter: var(--space-4);
   --header-height: 4rem;
 
