@@ -66,7 +66,7 @@
 }
 
 .property-type-btn span {
-  font-size: clamp(12px, 1.2vw, 14px);
+  font-size: clamp(10px, 1.2vw, 14px);
   font-weight: 600;
   line-height: 1.6;
 }
@@ -229,13 +229,13 @@
   
   .property-type-buttons {
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     gap: var(--space-2, 8px);
   }
   
   .property-type-btn {
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
   }
   
   .search-widgets {
