@@ -24,11 +24,11 @@ export class HeroPriceRatingComponent {
 
   readonly avatarCount = input.required<number>();
 
-  readonly avatarPlaceholders = computed(() =>
-
-    Array.from({ length: this.avatarCount() }, (_, i) => i + 1)
-
-  );
+  readonly avatars = computed(() => [
+    'assets/images/hero avatars/pexels-stefanstefancik-91227 1.png',
+    'assets/images/hero avatars/pexels-olly-874158 1.png',
+    'assets/images/hero avatars/pexels-enginakyurt-1642228 1.png',
+    'assets/images/hero avatars/pexels-chloekalaartist-1043474 1.png'
+  ]);
 
 }
-

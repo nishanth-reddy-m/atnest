@@ -14,15 +14,19 @@
 
     <div class="hero-avatars">
 
-      @for (avatar of avatarPlaceholders(); track $index) {
+      @for (avatar of avatars(); track $index) {
 
-        <div
+        <img
 
           class="hero-avatar"
 
+          [src]="avatar"
+
           [style.z-index]="avatarCount() - $index"
 
-        ></div>
+          alt="User avatar"
+
+        />
 
       }
 
