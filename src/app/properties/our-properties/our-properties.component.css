@@ -449,3 +449,24 @@
     align-self: flex-start;
   }
 }
+
+@media (max-width: 768px) {
+  .our-properties__title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .our-properties__underline {
+    width: 300px;
+    height: 10px;
+  }
+
+  .our-properties__subtitle {
+    font-size: var(--body-medium-size);
+  }
+
+  .our-properties__cta {
+    width: 125px;
+    height: 60px;
+  }
+}

@@ -304,7 +304,7 @@
 
   .hero-search-module {
 
-    display: none;
+    display: flex;
 
   }
 
@@ -354,3 +354,19 @@
 
 }
 
+@media (max-width: 768px) {
+  .hero-search-module {
+    height: 215px;
+  }
+
+  .hero-search-module-backplate {
+
+    height: 100%;
+    border-radius: 25px;
+
+  }
+
+  .hero-description {
+    font-size: var(--body-medium-size);
+  }
+}

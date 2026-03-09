@@ -1061,6 +1061,19 @@
   .booking-status-card {
     width: 100%;
   }
+
+  .real-stories__title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .real-stories__nav {
+    display: none;
+  }
+
+  .review-card__quote {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1087,10 +1100,5 @@
     width: 40px;
     height: 40px;
     font-size: 14px;
-  }
-
-  .real-stories__nav {
-    flex-direction: column;
-    gap: 12px;
   }
 }

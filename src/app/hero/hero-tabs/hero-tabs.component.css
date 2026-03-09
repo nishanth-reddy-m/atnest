@@ -95,3 +95,11 @@
 
 }
 
+@media (max-width: 768px) {
+  .hero-tab {
+    font-size: 0.55rem;
+  }
+  .hero-search {
+    width: 100%;
+  }
+}

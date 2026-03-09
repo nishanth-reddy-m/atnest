@@ -290,3 +290,13 @@
 
 }
 
+@media (max-width: 768px) {
+  .different__label {
+    font-size: 15px;
+  }
+
+  .different__subtitle {
+    font-size: var(--body-medium-size);
+  }
+}
+

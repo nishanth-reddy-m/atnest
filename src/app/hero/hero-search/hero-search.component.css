@@ -65,3 +65,19 @@
 .hero-search-icon-search {
   color: var(--atnest-primary);
 }
+
+@media (max-width: 768px) {
+  .hero-search {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-search-input {
+    font-size: var(--body-small-size);
+    padding: 3% 30%;
+  }
+
+  .hero-search-button {
+    width: 5rem;
+  }
+}

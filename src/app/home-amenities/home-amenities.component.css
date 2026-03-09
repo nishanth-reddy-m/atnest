@@ -169,3 +169,10 @@
     padding: 16px 18px;
   }
 }
+
+@media (max-width: 768px) {
+  .home-amenities__subtitle {
+    font-size: var(--body-medium-size);
+  }
+}
+

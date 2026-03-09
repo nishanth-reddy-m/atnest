@@ -46,7 +46,7 @@
 .blog-section__title {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 10px;
   height: 60px;
 }
 
@@ -291,5 +291,19 @@
     width: 100%;
     max-width: 400px;
     flex: none;
+  }
+
+  .blog-section__title-text {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .blog-section__title-accent {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .blog-section__description {
+    font-size: var(--body-medium-size);
   }
 }
