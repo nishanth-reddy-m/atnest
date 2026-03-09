@@ -251,3 +251,224 @@
     width: 100%;
   }
 }
+
+/* Filters and Sort Section */
+.filters-sort-section {
+  width: 100%;
+  max-width: var(--content-max-width, 1500px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-4, 16px);
+  margin-top: var(--space-4, 16px);
+  padding: 24px;
+  background: white;
+  border-radius: var(--radius-lg, 16.4px);
+  border: 1px var(--color-border, #EAEAEA) solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filters-sort-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: var(--space-4, 16px);
+}
+
+.filters-sort-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4, 16px);
+}
+
+.show-filters-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2, 8px);
+  padding: 16px;
+  background: #F8F9FA;
+  border: 1px #EAEAEA solid;
+  border-radius: var(--radius-md, 10px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.show-filters-btn:hover {
+  background: var(--atnest-primary);
+}
+
+.show-filters-content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2, 8px);
+}
+
+.show-filters-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.show-filters-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.show-filters-text {
+  font-family: var(--font-sans, Lexend), sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--color-text-primary, #1A1A1A);
+  white-space: nowrap;
+}
+
+.results-count {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.results-count-content {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.results-count-text {
+  font-family: var(--font-sans, Lexend), sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--color-gray-500, #6B6B6B);
+  white-space: nowrap;
+}
+
+.results-count-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 18px;
+}
+
+.results-count-value {
+  font-family: var(--font-sans, Lexend), sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--atnest-primary);
+  white-space: nowrap;
+}
+
+.filters-sort-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4, 16px);
+}
+
+.sort-by-container {
+  display: flex;
+  align-items: center;
+}
+
+.sort-by-text {
+  font-family: var(--font-sans, Lexend), sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 15px;
+  color: var(--color-gray-500, #6B6B6B);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+}
+
+.sort-dropdown {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2, 8px);
+  padding: 21px;
+  border: 1px var(--color-border, #EAEAEA) solid;
+  border-radius: var(--radius-md, 5px);
+  flex: 1 1 0;
+  min-height: 56px;
+}
+
+.sort-dropdown-content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3, 12px);
+  flex: 1;
+  min-height: 22.398px;
+}
+
+.sort-dropdown-icon {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+}
+
+.sort-dropdown-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sort-dropdown-text {
+  font-family: var(--font-sans, Lexend), sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22.4px;
+  color: var(--color-text-primary, #1A1A1A);
+  white-space: nowrap;
+}
+
+.sort-dropdown-arrow {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+}
+
+.sort-dropdown-arrow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mobile Responsive for Filters Section */
+@media (max-width: 768px) {
+  .filters-sort-section {
+    flex-direction: column;
+    gap: var(--space-3, 12px);
+    align-items: stretch;
+  }
+
+  .filters-sort-container {
+    flex-direction: column;
+    gap: var(--space-3, 12px);
+  }
+
+  .filters-sort-left {
+    justify-content: center;
+  }
+
+  .results-count {
+    order: -1;
+  }
+
+  .filters-sort-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .sort-dropdown {
+    padding: 12px;
+  }
+}
