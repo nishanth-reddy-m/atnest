@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 
 interface NavLink {
 
@@ -28,9 +28,11 @@ interface NavLink {
 
 export class HeaderComponent {
 
+  private router = inject(Router);
+
   readonly navLinks: readonly NavLink[] = [
 
-    { label: 'Home', href: '/', active: true },
+    { label: 'Home', href: '/' },
 
     { label: 'Properties', href: '/properties' },
 
@@ -43,6 +45,10 @@ export class HeaderComponent {
     { label: 'Contact', href: '/contact' },
 
   ];
+
+  isActive(href: string): boolean {
+    return this.router.url === href;
+  }
 
 }
 

@@ -27,7 +27,7 @@
 
         class="header__nav-link"
 
-        [class.header__nav-link--active]="link.active"
+        [class.header__nav-link--active]="isActive(link.href)"
 
         [routerLink]="link.href"
 
