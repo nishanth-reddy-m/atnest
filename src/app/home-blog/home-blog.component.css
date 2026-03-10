@@ -29,7 +29,7 @@
   flex-direction: column;
   gap: 12px;
   height: 150px;
-  width: 1000px;
+  width: auto;
 }
 
 .blog-section__subtitle {
@@ -292,6 +292,11 @@
     max-width: 400px;
     flex: none;
   }
+  .blog-section__title {
+    flex-direction: column;
+    height: auto;
+    gap: 0px;
+  }
 
   .blog-section__title-text {
     font-size: 40px;
@@ -305,5 +310,7 @@
 
   .blog-section__description {
     font-size: var(--body-medium-size);
+    overflow-wrap: break-word;
+    line-height: 1;
   }
 }

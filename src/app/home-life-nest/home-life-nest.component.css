@@ -29,7 +29,7 @@
   flex-direction: column;
   gap: 12px;
   height: 72.789px;
-  width: 500px;
+  width: auto;
 }
 
 .social-wall__subtitle {
