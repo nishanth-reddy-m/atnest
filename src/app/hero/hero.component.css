@@ -260,11 +260,11 @@
 
   .hero-search-module-tabs {
 
-    left: 50%;
+    left: 50vw;
 
     transform: translateX(-50%);
 
-    width: min(528px, calc(100% - 2rem));
+    width: min(528px, calc(100% - 1rem));
 
   }
 
@@ -356,7 +356,7 @@
 
 @media (max-width: 768px) {
   .hero-search-module {
-    height: 215px;
+    height: 130px;
   }
 
   .hero-search-module-backplate {
