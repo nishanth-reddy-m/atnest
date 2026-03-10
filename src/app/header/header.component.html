@@ -17,7 +17,14 @@
 
     </a>
 
-
+    <!-- Mobile Menu Button -->
+    <button class="header__mobile-menu-btn" (click)="toggleMobileMenu()" aria-label="Toggle mobile menu">
+      <span class="header__mobile-menu-icon" [class.header__mobile-menu-icon--open]="isMobileMenuOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
 
     <nav class="header__nav" aria-label="Primary">
 
@@ -41,8 +48,6 @@
 
     </nav>
 
-
-
     <div class="header__actions">
 
       <button type="button" class="header__action header__action--ghost">
@@ -55,8 +60,6 @@
         <span class="header__action-text">Search</span>
 
       </button>
-
-
 
       <a class="header__action header__action--primary" href="#">
 
@@ -72,6 +75,49 @@
     </div>
 
   </div>
+
+  <!-- Mobile Sidebar -->
+  <div class="header__mobile-sidebar" [class.header__mobile-sidebar--open]="isMobileMenuOpen">
+    <div class="header__mobile-sidebar-content">
+      <div class="header__mobile-sidebar-header">
+        <button class="header__mobile-close-btn" (click)="toggleMobileMenu()" aria-label="Close mobile menu">
+          <span class="header__mobile-close-icon">×</span>
+        </button>
+      </div>
+      
+      <nav class="header__mobile-nav" aria-label="Mobile navigation">
+        <a 
+          *ngFor="let link of navLinks"
+          class="header__mobile-nav-link"
+          [class.header__mobile-nav-link--active]="isActive(link.href)"
+          [routerLink]="link.href"
+          (click)="toggleMobileMenu()">
+          <span class="header__mobile-nav-text">{{ link.label }}</span>
+        </a>
+      </nav>
+
+      <div class="header__mobile-actions">
+        <button type="button" class="header__mobile-action header__mobile-action--ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" class="header__mobile-action-icon">
+            <path d="M14.0008 13.9998L11.1074 11.1064" stroke="var(--atnest-text)" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z" stroke="var(--atnest-text)" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="header__mobile-action-text">Search</span>
+        </button>
+
+        <a class="header__mobile-action header__mobile-action--primary" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" class="header__mobile-action-icon">
+            <path d="M12.6673 14V12.6667C12.6673 11.9594 12.3864 11.2811 11.8863 10.781C11.3862 10.281 10.7079 10 10.0007 10H6.00065C5.29341 10 4.61513 10.281 4.11503 10.781C3.61494 11.2811 3.33398 11.9594 3.33398 12.6667V14" stroke="var(--atnest-bg)" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8.00065 7.33333C9.47341 7.33333 10.6673 6.13943 10.6673 4.66667C10.6673 3.19391 9.47341 2 8.00065 2C6.52789 2 5.33398 3.19391 5.33398 4.66667C5.33398 6.13943 6.52789 7.33333 8.00065 7.33333Z" stroke="var(--atnest-bg)" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="header__mobile-action-text">Login</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Sidebar Overlay -->
+  <div class="header__mobile-overlay" [class.header__mobile-overlay--open]="isMobileMenuOpen" (click)="toggleMobileMenu()"></div>
 
 </header>
 

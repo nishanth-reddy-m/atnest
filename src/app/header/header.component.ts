@@ -30,6 +30,8 @@ export class HeaderComponent {
 
   private router = inject(Router);
 
+  isMobileMenuOpen = false;
+
   readonly navLinks: readonly NavLink[] = [
 
     { label: 'Home', href: '/' },
@@ -48,6 +50,17 @@ export class HeaderComponent {
 
   isActive(href: string): boolean {
     return this.router.url === href;
+  }
+
+  toggleMobileMenu(): void {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+    
+    // Prevent body scroll when menu is open
+    if (this.isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
   }
 
 }
