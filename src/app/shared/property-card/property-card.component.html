@@ -1,0 +1,95 @@
+<article class="property-card">
+  <div class="property-card__media">
+    <img class="property-card__img" [src]="property.imageSrc" [alt]="property.title" />
+
+    <div class="property-card__category">{{ property.category | uppercase }}</div>
+
+    <div class="property-card__actions" aria-hidden="true">
+      <div class="property-card__action">♡</div>
+      <div class="property-card__action">⤴</div>
+    </div>
+
+    <div class="property-card__rating">
+      <span class="property-card__rating-star">★</span>
+      <span class="property-card__rating-value">{{ property.rating }}</span>
+      <span class="property-card__rating-count">{{ property.ratingCount }}</span>
+    </div>
+  </div>
+
+  <div class="property-card__body">
+    <div class="property-card__meta">
+      <div class="property-card__meta-left">
+        <svg class="property-card__pin" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <g clip-path="url(#clip0_1307_578)">
+            <path d="M13.3327 6.66634C13.3327 9.99501 9.64002 13.4617 8.40002 14.5323C8.2845 14.6192 8.14388 14.6662 7.99935 14.6662C7.85482 14.6662 7.7142 14.6192 7.59868 14.5323C6.35868 13.4617 2.66602 9.99501 2.66602 6.66634C2.66602 5.25185 3.22792 3.8953 4.22811 2.89511C5.22831 1.89491 6.58486 1.33301 7.99935 1.33301C9.41384 1.33301 10.7704 1.89491 11.7706 2.89511C12.7708 3.8953 13.3327 5.25185 13.3327 6.66634Z" stroke="var(--atnest-primary)" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 8.66699C9.10457 8.66699 10 7.77156 10 6.66699C10 5.56242 9.10457 4.66699 8 4.66699C6.89543 4.66699 6 5.56242 6 6.66699C6 7.77156 6.89543 8.66699 8 8.66699Z" stroke="var(--atnest-primary)" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_1307_578">
+              <rect width="16" height="16" fill="var(--atnest-bg)"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <span class="property-card__meta-text">{{ property.location | uppercase }}</span>
+      </div>
+      <div class="property-card__meta-right">
+        <span class="property-card__sqft-icon" aria-hidden="true">⌁</span>
+        <span class="property-card__meta-text">{{ property.sqft }}</span>
+      </div>
+    </div>
+
+    <h3 class="property-card__title">{{ property.title }}</h3>
+
+    <div class="property-card__tags">
+      <span class="property-card__tag" *ngFor="let t of property.bedTags">{{ t }}</span>
+    </div>
+
+    <div class="property-card__amenities">
+      <svg class="property-card__amenity" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M10 16.667H10.0083" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M1.66602 7.35004C3.95778 5.30023 6.92463 4.16699 9.99935 4.16699C13.0741 4.16699 16.0409 5.30023 18.3327 7.35004" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M4.16602 10.7161C5.72376 9.18924 7.81808 8.33398 9.99935 8.33398C12.1806 8.33398 14.2749 9.18924 15.8327 10.7161" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M7.08398 13.6911C7.86285 12.9276 8.91001 12.5 10.0007 12.5C11.0913 12.5 12.1384 12.9276 12.9173 13.6911" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <svg class="property-card__amenity" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M10.666 16.333C10.8773 16.4915 11.1232 16.5974 11.3834 16.6422C11.6437 16.687 11.9109 16.6693 12.163 16.5905C12.415 16.5118 12.6448 16.3743 12.8333 16.1893C13.0218 16.0044 13.1636 15.7773 13.2472 15.5267C13.3307 15.2762 13.3534 15.0094 13.3136 14.7483C13.2738 14.4873 13.1725 14.2394 13.0181 14.0252C12.8637 13.8109 12.6606 13.6364 12.4255 13.5161C12.1904 13.3958 11.9301 13.333 11.666 13.333H1.66602" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14.5827 6.66634C14.7958 6.38225 15.0779 6.15733 15.4024 6.01296C15.7268 5.86858 16.0828 5.80953 16.4364 5.84143C16.7901 5.87332 17.1298 5.99509 17.4232 6.19517C17.7166 6.39526 17.9539 6.66702 18.1127 6.98465C18.2716 7.30227 18.3465 7.65522 18.3306 8.00998C18.3146 8.36474 18.2082 8.70953 18.0215 9.01162C17.8348 9.3137 17.574 9.56304 17.2639 9.73597C16.9537 9.9089 16.6045 9.99967 16.2493 9.99967H1.66602" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8.16602 3.66634C8.37729 3.50789 8.62318 3.40191 8.88345 3.35714C9.14371 3.31236 9.41089 3.33008 9.66296 3.40882C9.91504 3.48756 10.1448 3.62508 10.3333 3.81003C10.5218 3.99499 10.6636 4.22209 10.7472 4.47263C10.8307 4.72316 10.8534 4.98996 10.8136 5.25102C10.7738 5.51209 10.6725 5.75995 10.5181 5.97419C10.3637 6.18843 10.1606 6.36291 9.92548 6.48325C9.69041 6.60359 9.4301 6.66634 9.16602 6.66634H1.66602" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <svg class="property-card__amenity" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M14.1673 1.66699L10.0007 5.83366L5.83398 1.66699" stroke="#F26622" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16.666 5.83301H3.33268C2.41221 5.83301 1.66602 6.5792 1.66602 7.49967V16.6663C1.66602 17.5868 2.41221 18.333 3.33268 18.333H16.666C17.5865 18.333 18.3327 17.5868 18.3327 16.6663V7.49967C18.3327 6.5792 17.5865 5.83301 16.666 5.83301Z" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <svg class="property-card__amenity" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M8.33398 1.66699V3.33366" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M11.666 1.66699V3.33366" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M13.3333 6.66699C13.5543 6.66699 13.7663 6.75479 13.9226 6.91107C14.0789 7.06735 14.1667 7.27931 14.1667 7.50033V14.167C14.1667 15.051 13.8155 15.8989 13.1904 16.524C12.5652 17.1491 11.7174 17.5003 10.8333 17.5003H5.83333C4.94928 17.5003 4.10143 17.1491 3.47631 16.524C2.85119 15.8989 2.5 15.051 2.5 14.167V7.50033C2.5 7.27931 2.5878 7.06735 2.74408 6.91107C2.90036 6.75479 3.11232 6.66699 3.33333 6.66699H15C15.8841 6.66699 16.7319 7.01818 17.357 7.6433C17.9821 8.26842 18.3333 9.11627 18.3333 10.0003C18.3333 10.8844 17.9821 11.7322 17.357 12.3573C16.7319 12.9825 15.8841 13.3337 15 13.3337H14.1667" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5 1.66699V3.33366" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <svg class="property-card__amenity" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M16.6673 10.8331C16.6673 14.9997 13.7507 17.0831 10.284 18.2914C10.1025 18.3529 9.90527 18.35 9.72565 18.2831C6.25065 17.0831 3.33398 14.9997 3.33398 10.8331V4.99972C3.33398 4.77871 3.42178 4.56675 3.57806 4.41047C3.73434 4.25419 3.9463 4.16639 4.16732 4.16639C5.83398 4.16639 7.91732 3.16639 9.36732 1.89972C9.54386 1.74889 9.76845 1.66602 10.0007 1.66602C10.2329 1.66602 10.4574 1.74889 10.634 1.89972C12.0923 3.17472 14.1673 4.16639 15.834 4.16639C16.055 4.16639 16.267 4.25419 16.4232 4.41047C16.5795 4.56675 16.6673 4.77871 16.6673 4.99972V10.8331Z" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <svg class="property-card__amenity" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M8.33268 3.33301L6.66602 4.99967" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14.166 15.833V17.4997" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M1.66602 10H18.3327" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5.83398 15.833V17.4997" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M7.50065 4.16683L6.35148 3.01766C6.1105 2.77555 5.80451 2.60846 5.47055 2.53661C5.13659 2.46476 4.78896 2.49122 4.46973 2.6128C4.15049 2.73437 3.87333 2.94585 3.67176 3.22165C3.4702 3.49745 3.35288 3.82575 3.33398 4.16683V14.1668C3.33398 14.6089 3.50958 15.0328 3.82214 15.3453C4.1347 15.6579 4.55862 15.8335 5.00065 15.8335H15.0007C15.4427 15.8335 15.8666 15.6579 16.1792 15.3453C16.4917 15.0328 16.6673 14.6089 16.6673 14.1668V10.0002" stroke="var(--atnest-primary)" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <div class="property-card__divider" aria-hidden="true"></div>
+
+    <div class="property-card__footer">
+      <div class="property-card__price">
+        <div class="property-card__price-label">Starts from</div>
+        <div class="property-card__price-row">
+          <span class="property-card__price-value">{{ property.priceFrom }}</span>
+          <span class="property-card__price-suffix">/ {{ property.priceSuffix }}</span>
+        </div>
+      </div>
+
+      <button type="button" class="property-card__details">Details <span aria-hidden="true">→</span></button>
+    </div>
+  </div>
+</article>

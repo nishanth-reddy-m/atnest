@@ -472,3 +472,30 @@
     padding: 12px;
   }
 }
+
+/* Property Cards Grid */
+.properties-grid-section {
+  width: min(95%, var(--content-max-width, 1500px));
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  justify-content: center;
+}
+
+/* Mobile Responsive for Property Cards Grid */
+@media (max-width: 768px) {
+  .properties-grid-section {
+    margin: 20px auto;
+    padding: 0 16px;
+  }
+
+  .properties-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
