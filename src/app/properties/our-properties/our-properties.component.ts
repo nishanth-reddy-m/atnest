@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { PropertyCardComponent } from '../../shared/property-card/property-card.component';
 
 interface PropertyCardModel {
   title: string;
@@ -17,7 +18,7 @@ interface PropertyCardModel {
 @Component({
   selector: 'app-our-properties',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, PropertyCardComponent],
   templateUrl: './our-properties.component.html',
   styleUrl: './our-properties.component.css',
 })

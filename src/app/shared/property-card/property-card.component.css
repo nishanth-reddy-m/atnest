@@ -8,7 +8,7 @@
 
 .property-card__media {
   position: relative;
-  height: 250px;
+  height: 400px;
   overflow: hidden;
   border-bottom: 1px solid rgba(234, 234, 234, 0.5);
 }
@@ -89,10 +89,10 @@
 }
 
 .property-card__body {
-  padding: 18px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 15px;
 }
 
 .property-card__meta {
