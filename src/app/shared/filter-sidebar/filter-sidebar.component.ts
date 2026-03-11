@@ -44,15 +44,30 @@ export class FilterSidebarComponent {
   isDragging = false;
   activeSlider: 'min' | 'max' | null = null;
 
-  // Slider position calculations based on Figma design
+  // Slider position calculations based on dynamic container width
+  get sliderContainerWidth(): number {
+    const container = document.querySelector('.price-range__slider-container') as HTMLElement;
+    if (container) {
+      return container.offsetWidth;
+    }
+    // Fallback widths for different screen sizes
+    if (typeof window !== 'undefined') {
+      if (window.innerWidth <= 360) return 280;
+      if (window.innerWidth <= 480) return 320;
+      if (window.innerWidth <= 768) return 350;
+      return 434;
+    }
+    return 434; // Default desktop width
+  }
+
   get minSliderPixelPosition(): number {
     const percentage = (this.currentMin / this.priceMax) * 100;
-    return (percentage / 100) * 434; // 434px is the track width from Figma
+    return (percentage / 100) * this.sliderContainerWidth;
   }
 
   get maxSliderPixelPosition(): number {
     const percentage = (this.currentMax / this.priceMax) * 100;
-    return (percentage / 100) * 434; // 434px is the track width from Figma
+    return (percentage / 100) * this.sliderContainerWidth;
   }
 
   get trackFillWidth(): number {
