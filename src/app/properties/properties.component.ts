@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { PropertyCardComponent } from '../shared/property-card/property-card.component';
+import { FilterSidebarComponent, FilterState } from '../shared/filter-sidebar/filter-sidebar.component';
 
 interface PropertyCardModel {
   title: string;
@@ -19,13 +20,57 @@ interface PropertyCardModel {
 @Component({
   selector: 'app-properties',
   standalone: true,
-  imports: [CommonModule, PropertyCardComponent],
+  imports: [CommonModule, PropertyCardComponent, FilterSidebarComponent],
   templateUrl: './properties.component.html',
   styleUrls: ['./properties.component.css'],
 })
 export class PropertiesComponent {
 
   private router = inject(Router);
+
+  filteredProperties: readonly PropertyCardModel[] = [];
+  currentFilters: FilterState = {
+    priceRange: { min: 0, max: 50000 },
+    locations: ['Hitech City', 'Madhapur', 'Gachibowli'],
+    propertyTypes: ['Coliving', 'Service Apartments']
+  };
+  showFilters = true;
+
+  constructor() {
+    this.filteredProperties = this.propertyCards;
+  }
+
+  onFiltersChanged(filters: FilterState) {
+    this.currentFilters = filters;
+    this.applyFilters();
+  }
+
+  private applyFilters() {
+    this.filteredProperties = this.propertyCards.filter(property => {
+      // Price filter
+      const price = parseInt(property.priceFrom.replace(/[₹,]/g, ''));
+      const priceInRange = price >= this.currentFilters.priceRange.min && 
+                         price <= this.currentFilters.priceRange.max;
+
+      // Location filter
+      const locationMatch = this.currentFilters.locations.length === 0 || 
+                           this.currentFilters.locations.includes(property.location);
+
+      // Property type filter
+      const typeMatch = this.currentFilters.propertyTypes.length === 0 || 
+                      this.currentFilters.propertyTypes.includes(property.category);
+
+      return priceInRange && locationMatch && typeMatch;
+    });
+  }
+
+  get resultsCount(): number {
+    return this.filteredProperties.length;
+  }
+
+  toggleFilters() {
+    this.showFilters = !this.showFilters;
+  }
 
   readonly propertyCards: readonly PropertyCardModel[] = [
     {

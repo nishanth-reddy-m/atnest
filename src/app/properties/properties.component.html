@@ -135,52 +135,63 @@
       </button>
     </div>
   </div>
+</div>
 
-  <!-- Filters and Sort Section -->
-  <div class="filters-sort-section">
-    <div class="filters-sort-container">
-      <div class="filters-sort-left">
-        <a class="show-filters-btn">
-          <div class="show-filters-content">
-            <div class="show-filters-icon">
-              <img src="https://www.figma.com/api/mcp/asset/e50190ac-c7b7-4b37-ade1-2f25383d5ebd" alt="Show Filters" />
+<!-- Main Content Area with Filter Sidebar and Property Grid -->
+<div class="properties-main-content" [class.properties-main-content--no-sidebar]="!showFilters">
+  <!-- Filter Sidebar -->
+  <div class="properties-sidebar" *ngIf="showFilters">
+    <app-filter-sidebar (filtersChanged)="onFiltersChanged($event)"></app-filter-sidebar>
+  </div>
+
+  <!-- Property Content Area -->
+  <div class="properties-content" [class.properties-content--full-width]="!showFilters">
+    <!-- Filters and Sort Header -->
+    <div class="filters-sort-section">
+      <div class="filters-sort-container">
+        <div class="filters-sort-left">
+          <a class="show-filters-btn" (click)="toggleFilters()">
+            <div class="show-filters-content">
+              <div class="show-filters-icon">
+                <img src="https://www.figma.com/api/mcp/asset/e50190ac-c7b7-4b37-ade1-2f25383d5ebd" alt="Toggle Filters" />
+              </div>
+              <span class="show-filters-text">{{ showFilters ? 'Hide Filters' : 'Show Filters' }}</span>
             </div>
-            <span class="show-filters-text">Show Filters</span>
-          </div>
-        </a>
-        <div class="results-count">
-          <div class="results-count-content">
-            <span class="results-count-text">Showing</span>
-            <div class="results-count-number">
-              <span class="results-count-value">14</span>
+          </a>
+          <div class="results-count">
+            <div class="results-count-content">
+              <span class="results-count-text">Showing</span>
+              <div class="results-count-number">
+                <span class="results-count-value">{{ resultsCount }}</span>
+              </div>
+              <span class="results-count-text">results</span>
             </div>
-            <span class="results-count-text">results</span>
           </div>
         </div>
-      </div>
-      <div class="filters-sort-right">
-        <div class="sort-by-container">
-          <div class="sort-by-text">Sort By</div>
-        </div>
-        <div class="sort-dropdown">
-          <div class="sort-dropdown-content">
-            <div class="sort-dropdown-icon">
-              <img src="https://www.figma.com/api/mcp/asset/1c0d7f4c-bac0-4c95-8d41-c6f20ee601d7" alt="Sort" />
-            </div>
-            <span class="sort-dropdown-text">Price: Low to High</span>
+        <div class="filters-sort-right">
+          <div class="sort-by-container">
+            <div class="sort-by-text">Sort By</div>
           </div>
-          <div class="sort-dropdown-arrow">
-            <img src="https://www.figma.com/api/mcp/asset/f85f56c7-ab12-4038-805d-0441c1a24077" alt="Dropdown" />
+          <div class="sort-dropdown">
+            <div class="sort-dropdown-content">
+              <div class="sort-dropdown-icon">
+                <img src="https://www.figma.com/api/mcp/asset/1c0d7f4c-bac0-4c95-8d41-c6f20ee601d7" alt="Sort" />
+              </div>
+              <span class="sort-dropdown-text">Price: Low to High</span>
+            </div>
+            <div class="sort-dropdown-arrow">
+              <img src="https://www.figma.com/api/mcp/asset/f85f56c7-ab12-4038-805d-0441c1a24077" alt="Dropdown" />
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Property Cards Grid -->
-<div class="properties-grid-section">
-  <div class="properties-grid">
-    <app-property-card *ngFor="let property of propertyCards" [property]="property"></app-property-card>
+    <!-- Property Cards Grid -->
+    <div class="properties-grid-section">
+      <div class="properties-grid" [class.properties-grid--three-columns]="!showFilters">
+        <app-property-card *ngFor="let property of filteredProperties" [property]="property"></app-property-card>
+      </div>
+    </div>
   </div>
 </div>

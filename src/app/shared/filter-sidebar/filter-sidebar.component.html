@@ -1,0 +1,110 @@
+<aside class="filter-sidebar" data-name="Properties">
+  <!-- Filter Header -->
+  <div class="filter-sidebar__header">
+    <div class="filter-sidebar__title">
+      <svg class="filter-sidebar__title-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M4.16602 7.5H15.8327" stroke="#1A1A1A" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M4.16602 10H15.8327" stroke="#1A1A1A" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M4.16602 12.5H15.8327" stroke="#1A1A1A" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h3 class="filter-sidebar__title-text">Filters</h3>
+    </div>
+    <button type="button" class="filter-sidebar__reset" (click)="resetAllFilters()">Reset All</button>
+  </div>
+
+  <!-- Price Range Filter -->
+  <div class="filter-sidebar__section">
+    <h4 class="filter-sidebar__section-title">Price Range (Monthly)</h4>
+    
+    <!-- Price Range Slider Container -->
+    <div class="price-range__slider-container">
+      <!-- Track -->
+      <div class="price-range__track">
+        <!-- Track Fill -->
+        <div 
+          class="price-range__track-fill" 
+          [style.width.px]="trackFillWidth"
+          [style.left.px]="trackFillLeft"
+        ></div>
+      </div>
+      
+      <!-- Min Slider Handle -->
+      <div 
+        class="price-range__slider-handle price-range__slider-handle--min"
+        [style.left.px]="minSliderPixelPosition"
+        (mousedown)="onMinSliderDrag($event)"
+        (touchstart)="onMinSliderTouch($event)"
+      ></div>
+      
+      <!-- Max Slider Handle -->
+      <div 
+        class="price-range__slider-handle price-range__slider-handle--max"
+        [style.left.px]="maxSliderPixelPosition"
+        (mousedown)="onMaxSliderDrag($event)"
+        (touchstart)="onMaxSliderTouch($event)"
+      ></div>
+    </div>
+
+    <!-- Price Input Fields -->
+    <div class="price-range__inputs">
+      <div class="price-range__input-group">
+        <label class="price-range__label">Min</label>
+        <div class="price-range__input-wrapper">
+          <span class="price-range__value">{{ formatPrice(currentMin) }}</span>
+        </div>
+      </div>
+      <div class="price-range__input-group">
+        <label class="price-range__label">Max</label>
+        <div class="price-range__input-wrapper">
+          <span class="price-range__value">{{ formatPrice(currentMax) }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Preferred Locations Filter -->
+  <div class="filter-sidebar__section">
+    <h4 class="filter-sidebar__section-title">Preferred Locations</h4>
+    <div class="filter-options">
+      <div class="filter-option" *ngFor="let location of locations">
+        <label class="filter-option__label">
+          <input 
+            type="checkbox" 
+            class="filter-option__checkbox"
+            [checked]="selectedLocations.has(location)"
+            (change)="onLocationChange(location, $any($event.target).checked)"
+          >
+          <span class="filter-option__checkmark" [class.filter-option__checkmark--checked]="selectedLocations.has(location)">
+            <svg class="filter-option__check-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M11.6663 3.5L5.24967 9.91667L2.33301 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="filter-option__text">{{ location }}</span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Property Type Filter -->
+  <div class="filter-sidebar__section">
+    <h4 class="filter-sidebar__section-title">Property Type</h4>
+    <div class="filter-options">
+      <div class="filter-option" *ngFor="let type of propertyTypes">
+        <label class="filter-option__label">
+          <input 
+            type="checkbox" 
+            class="filter-option__checkbox"
+            [checked]="selectedPropertyTypes.has(type)"
+            (change)="onPropertyTypeChange(type, $any($event.target).checked)"
+          >
+          <span class="filter-option__checkmark" [class.filter-option__checkmark--checked]="selectedPropertyTypes.has(type)">
+            <svg class="filter-option__check-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M11.6663 3.5L5.24967 9.91667L2.33301 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="filter-option__text">{{ type }}</span>
+        </label>
+      </div>
+    </div>
+  </div>
+</aside>
