@@ -327,6 +327,8 @@
 
 .property-info__description {
   height: 52px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .property-info__description p {
@@ -336,6 +338,7 @@
   line-height: 24px;
   color: #6b6b6b;
   margin: 0;
+  display: inline;
 }
 
 .property-info__read-more {
@@ -345,6 +348,8 @@
   line-height: 24px;
   color: #f26622;
   text-decoration: none;
+  display: inline;
+  margin-left: 4px;
 }
 
 .property-info__read-more:hover {
@@ -759,6 +764,10 @@
   .booking-sidebar__actions {
     flex-direction: column;
     height: auto;
+  }
+
+  .property-info__description p {
+    line-height: 20px;
   }
 }
 
