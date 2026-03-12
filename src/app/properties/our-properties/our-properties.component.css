@@ -199,8 +199,6 @@
 @media (max-width: 1700px) {
   .our-properties__inner {
     width: calc(100% - 2 * var(--content-gutter));
-    padding-left: var(--content-gutter);
-    padding-right: var(--content-gutter);
   }
 }
 

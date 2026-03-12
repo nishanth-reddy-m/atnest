@@ -1,0 +1,93 @@
+<div class="property-detail">
+  <!-- Search Bar Section -->
+  <div class="search-bar-section">
+    <div class="search-bar-container">
+      <div class="search-bar-widgets">
+        <!-- Date Range Widget -->
+        <div class="search-widget">
+          <div class="search-widget__label">Move in & Move Out</div>
+          <div class="search-widget__content">
+            <svg class="search-widget__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M6 1.5V4.5" stroke="var(--atnest-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 1.5V4.5" stroke="var(--atnest-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14.25 3H3.75C2.92157 3 2.25 3.67157 2.25 4.5V15C2.25 15.8284 2.92157 16.5 3.75 16.5H14.25C15.0784 16.5 15.75 15.8284 15.75 15V4.5C15.75 3.67157 15.0784 3 14.25 3Z" stroke="var(--atnest-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2.25 7.5H15.75" stroke="var(--atnest-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="search-widget__text">{{ searchForm.dateRange.checkIn }} - {{ searchForm.dateRange.checkOut }}</span>
+          </div>
+        </div>
+
+        <!-- Sharing Widget -->
+        <div class="search-widget">
+          <div class="search-widget__label">Sharing</div>
+          <div class="search-widget__content">
+            <div class="search-widget__selected">
+              <svg class="search-widget__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M1.5 15V9C1.5 8.60218 1.65804 8.22064 1.93934 7.93934C2.22064 7.65804 2.60218 7.5 3 7.5H15C15.3978 7.5 15.7794 7.65804 16.0607 7.93934C16.342 8.22064 16.5 8.60218 16.5 9V15" stroke="var(--atnest-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 7.5V4.5C3 4.10218 3.15804 3.72064 3.43934 3.43934C3.72064 3.15804 4.10218 3 4.5 3H13.5C13.8978 3 14.2794 3.15804 14.5607 3.43934C14.842 3.72064 15 4.10218 15 4.5V7.5" stroke="var(--atnest-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 3V7.5" stroke="var(--atnest-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1.5 13.5H16.5" stroke="var(--atnest-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="search-widget__text">{{ searchForm.sharing }}</span>
+            </div>
+            <svg class="search-widget__dropdown" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <polyline points="6,9 12,15 18,9" stroke="var(--atnest-text)" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Occupancy Widget -->
+        <div class="search-widget">
+          <div class="search-widget__label">Occupancy</div>
+          <div class="search-widget__content">
+            <div class="search-widget__selected">
+              <svg class="search-widget__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M12 15.75V14.25C12 13.4544 11.6839 12.6913 11.1213 12.1287C10.5587 11.5661 9.79565 11.25 9 11.25H4.5C3.70435 11.25 2.94129 11.5661 2.37868 12.1287C1.81607 12.6913 1.5 13.4544 1.5 14.25V15.75" stroke="var(--atnest-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 2.34619C12.6433 2.51297 13.213 2.88864 13.6198 3.41424C14.0265 3.93984 14.2471 4.58561 14.2471 5.25019C14.2471 5.91477 14.0265 6.56055 13.6198 7.08614C13.213 7.61174 12.6433 7.98741 12 8.15419" stroke="var(--atnest-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.5 15.7502V14.2502C16.4995 13.5855 16.2783 12.9397 15.871 12.4144C15.4638 11.889 14.8936 11.5138 14.25 11.3477" stroke="var(--atnest-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.75 8.25C8.40685 8.25 9.75 6.90685 9.75 5.25C9.75 3.59315 8.40685 2.25 6.75 2.25C5.09315 2.25 3.75 3.59315 3.75 5.25C3.75 6.90685 5.09315 8.25 6.75 8.25Z" stroke="var(--atnest-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="search-widget__text">{{ searchForm.occupancy }}</span>
+            </div>
+            <svg class="search-widget__dropdown" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <polyline points="6,9 12,15 18,9" stroke="var(--atnest-text)" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- AC Widget -->
+        <div class="search-widget">
+          <div class="search-widget__label">AC</div>
+          <div class="search-widget__content">
+            <div class="search-widget__selected">
+              <svg class="search-widget__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M9.6 14.7C9.79014 14.8426 10.0115 14.938 10.2457 14.9783C10.4799 15.0186 10.7204 15.0026 10.9473 14.9318C11.1741 14.8609 11.3809 14.7371 11.5505 14.5707C11.7202 14.4042 11.8479 14.1998 11.923 13.9743C11.9982 13.7489 12.0187 13.5087 11.9828 13.2738C11.947 13.0388 11.8558 12.8157 11.7169 12.6229C11.5779 12.4301 11.3951 12.2731 11.1835 12.1648C10.972 12.0565 10.7377 12 10.5 12H1.5" stroke="var(--atnest-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.125 6C13.3168 5.74432 13.5707 5.54189 13.8627 5.41195C14.1547 5.28202 14.4751 5.22887 14.7934 5.25758C15.1117 5.28628 15.4174 5.39587 15.6814 5.57595C15.9455 5.75603 16.1591 6.00061 16.3021 6.28647C16.445 6.57234 16.5125 6.89 16.4981 7.20928C16.4837 7.52856 16.388 7.83887 16.22 8.11075C16.0519 8.38262 15.8172 8.60703 15.5381 8.76267C15.2589 8.9183 14.9446 9 14.625 9H1.5" stroke="var(--atnest-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.35 3.3C7.54014 3.15739 7.76145 3.06201 7.99569 3.02172C8.22992 2.98142 8.47038 2.99736 8.69725 3.06823C8.92412 3.1391 9.1309 3.26286 9.30055 3.42932C9.4702 3.59578 9.59786 3.80018 9.67302 4.02566C9.74819 4.25114 9.76869 4.49125 9.73284 4.72621C9.697 4.96117 9.60584 5.18425 9.46686 5.37707C9.32789 5.56988 9.14509 5.72691 8.93352 5.83522C8.72195 5.94352 8.48768 6 8.25 6H1.5" stroke="var(--atnest-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="search-widget__text">{{ searchForm.ac ? 'AC' : 'Non AC' }}</span>
+            </div>
+            <svg class="search-widget__dropdown" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <polyline points="6,9 12,15 18,9" stroke="var(--atnest-text)" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Button -->
+      <button class="search-bar__button" (click)="onSearch()">
+        <svg class="search-bar__button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <circle cx="11" cy="11" r="8" stroke="var(--atnest-primary)" stroke-width="2"/>
+          <path d="M21 21l-4.35-4.35" stroke="var(--atnest-primary)" stroke-width="2"/>
+        </svg>
+        <span class="search-bar__button-text">Search</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Rest of the property detail content will be added here -->
+  <div class="property-detail__content">
+    <!-- Placeholder for other sections -->
+    <p>Property gallery and information sections will be implemented next...</p>
+  </div>
+</div>

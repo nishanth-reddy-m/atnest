@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface PropertyCardModel {
   title: string;
@@ -23,4 +24,12 @@ interface PropertyCardModel {
 })
 export class PropertyCardComponent {
   @Input() property!: PropertyCardModel;
+  private router = inject(Router);
+
+  onViewDetails() {
+    // Navigate to property detail page with property ID
+    // For now, using title as ID, but in real app this would be a proper ID
+    const propertyId = this.property.title.toLowerCase().replace(/\s+/g, '-');
+    this.router.navigate(['/property', propertyId]);
+  }
 }

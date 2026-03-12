@@ -1,0 +1,220 @@
+/* Property Detail Page Styles */
+.property-detail {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+/* Search Bar Section - Figma Design Match */
+.search-bar-section {
+  width: 100%;
+  background: #f8f9fa;
+  padding: 16px 0;
+}
+
+.search-bar-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  background: #f26622;
+  border: 1px solid #eaeaea;
+  border-radius: 15px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.search-bar-widgets {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+  align-items: flex-end;
+}
+
+/* Search Widget Styles - Figma Design */
+.search-widget {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.search-widget__label {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 15px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+}
+
+.search-widget__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  background: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0 21px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+/* Date range widget has different styling */
+.search-widget:first-child .search-widget__content {
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.search-widget__selected {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.search-widget__icon {
+  width: 18px;
+  height: 18px;
+  stroke: #1a1a1a;
+  flex-shrink: 0;
+}
+
+.search-widget__text {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22.4px;
+  color: #1a1a1a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.search-widget__dropdown {
+  width: 16px;
+  height: 16px;
+  stroke: #1a1a1a;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.search-widget__content:hover .search-widget__dropdown {
+  transform: translateY(2px);
+}
+
+/* Search Button - Figma Design */
+.search-bar__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 50px;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Lexend', sans-serif;
+  padding: 0 100px;
+  flex-shrink: 0;
+}
+
+.search-bar__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar__button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar__button-icon {
+  width: 20px;
+  height: 20px;
+  stroke: #f26622;
+  stroke-width: 2;
+}
+
+.search-bar__button-text {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f26622;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Property Detail Content */
+.property-detail__content {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 40px 160px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .search-bar-container {
+    margin: 0 80px;
+    max-width: none;
+    gap: 15px;
+  }
+
+  .search-bar-widgets {
+    gap: 10px;
+  }
+
+  .search-bar__button {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-bar-container {
+    margin: 0 20px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .search-bar-widgets {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .search-widget {
+    min-width: calc(50% - 7.5px);
+  }
+
+  .search-bar__button {
+    width: 100%;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-widget {
+    min-width: 100%;
+  }
+
+  .search-bar-container {
+    padding: 12px;
+  }
+
+  .search-widget__content {
+    padding: 0 15px;
+  }
+
+  .search-bar__button {
+    padding: 0 20px;
+  }
+}

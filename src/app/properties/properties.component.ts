@@ -34,7 +34,7 @@ export class PropertiesComponent {
     locations: ['Hitech City', 'Madhapur', 'Gachibowli'],
     propertyTypes: ['Coliving', 'Service Apartments']
   };
-  showFilters = true;
+  showFilters = false;
 
   constructor() {
     this.filteredProperties = this.propertyCards;

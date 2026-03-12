@@ -328,7 +328,7 @@
 }
 
 .show-filters-btn:hover {
-  background: var(--atnest-primary);
+  border: 1px solid var(--atnest-primary);
 }
 
 .show-filters-content {
@@ -571,6 +571,7 @@
   }
 
   .properties-grid-section {
+    width: 100vw;
     margin: 24px 0;
   }
 

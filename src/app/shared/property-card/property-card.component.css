@@ -8,7 +8,7 @@
 
 .property-card__media {
   position: relative;
-  height: 400px;
+  height: 360px;
   overflow: hidden;
   border-bottom: 1px solid rgba(234, 234, 234, 0.5);
 }
@@ -245,8 +245,8 @@
   }
 
   .property-card__amenity {
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
     padding: 5px;
   }
 
@@ -259,5 +259,9 @@
   .property-card__details {
     width: 100%;
     justify-content: center;
+  }
+
+  .property-card__media {
+    height: 275px;
   }
 }
