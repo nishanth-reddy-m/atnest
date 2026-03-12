@@ -85,9 +85,189 @@
     </div>
   </div>
 
-  <!-- Rest of the property detail content will be added here -->
+  <!-- Property Detail Content -->
   <div class="property-detail__content">
-    <!-- Placeholder for other sections -->
-    <p>Property gallery and information sections will be implemented next...</p>
+    <div class="property-detail__main">
+      <!-- Property Gallery Section -->
+      <div class="property-gallery">
+        <div class="property-gallery__main">
+          <img class="property-gallery__main-image" [src]="propertyData.mainImage" [alt]="propertyData.title" />
+        </div>
+        
+        <div class="property-gallery__thumbnails">
+          <div class="property-gallery__thumbnail" 
+               *ngFor="let thumbnail of propertyData.thumbnailImages; let i = index"
+               [class]="{'property-gallery__thumbnail--active': selectedThumbnail === i}"
+               (click)="selectThumbnail(i)">
+            <img class="property-gallery__thumbnail-image" [src]="thumbnail" [alt]="'Thumbnail ' + (i + 1)" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Property Information Section -->
+      <div class="property-info">
+        <div class="property-info__header">
+          <div class="property-info__title-row">
+            <h1 class="property-info__title">{{ propertyData.title }}</h1>
+            <div class="property-info__rating">
+              <div class="property-info__rating-badge">
+                <svg class="property-info__rating-star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FDC700"/>
+                </svg>
+                <span class="property-info__rating-value">{{ propertyData.rating }}</span>
+                <span class="property-info__rating-count">({{ propertyData.ratingCount }})</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="property-info__location">
+            <svg class="property-info__location-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.4277 21.9293 12.2168 21.9998 12 21.9998C11.7832 21.9998 11.5723 21.9293 11.399 21.799C9.539 20.193 4 14.993 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z" stroke="var(--atnest-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="var(--atnest-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="property-info__location-text">{{ propertyData.location }}</span>
+          </div>
+        </div>
+        
+        <div class="property-info__description">
+          <p>{{ propertyData.description }}</p>
+          <a href="#" class="property-info__read-more">View more</a>
+        </div>
+      </div>
+
+      <!-- Placeholder for apartment selection and location sections -->
+      <p>Apartment selection and location sections will be implemented next...</p>
+    </div>
+
+    <!-- Booking Form Sidebar -->
+    <div class="booking-sidebar">
+      <div class="booking-sidebar__header">
+        <div class="booking-sidebar__type">1 BHK</div>
+        <div class="booking-sidebar__price">₹20,000</div>
+      </div>
+      
+      <div class="booking-sidebar__actions">
+        <button class="booking-sidebar__button booking-sidebar__button--primary">
+          <svg class="booking-sidebar__button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <g clip-path="url(#clip0_778_4863)">
+              <path d="M8 4V8L10.6667 9.33333" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.9987 14.6663C11.6806 14.6663 14.6654 11.6816 14.6654 7.99967C14.6654 4.31778 11.6806 1.33301 7.9987 1.33301C4.3168 1.33301 1.33203 4.31778 1.33203 7.99967C1.33203 11.6816 4.3168 14.6663 7.9987 14.6663Z" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_778_4863">
+                <rect width="16" height="16" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <span>Schedule Visit</span>
+        </button>
+        <button class="booking-sidebar__button booking-sidebar__button--secondary">
+          <svg class="booking-sidebar__button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M5.33203 1.33301V3.99967" stroke="#6B6B6B" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10.668 1.33301V3.99967" stroke="#6B6B6B" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.6667 2.6665H3.33333C2.59695 2.6665 2 3.26346 2 3.99984V13.3332C2 14.0696 2.59695 14.6665 3.33333 14.6665H12.6667C13.403 14.6665 14 14.0696 14 13.3332V3.99984C14 3.26346 13.403 2.6665 12.6667 2.6665Z" stroke="#6B6B6B" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 6.6665H14" stroke="#6B6B6B" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Book Now</span>
+        </button>
+      </div>
+
+      <div class="booking-sidebar__form">
+        <div class="booking-sidebar__form-row">
+          <div class="booking-sidebar__form-group">
+            <label class="booking-sidebar__label">Full Name</label>
+            <div class="booking-sidebar__input">
+              <span class="booking-sidebar__input-text">Sathish</span>
+            </div>
+          </div>
+          <div class="booking-sidebar__form-group">
+            <label class="booking-sidebar__label">Last Name</label>
+            <div class="booking-sidebar__input">
+              <span class="booking-sidebar__input-text">Devasani</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-sidebar__form-group">
+          <label class="booking-sidebar__label">Mobile Number</label>
+          <div class="booking-sidebar__input">
+            <span class="booking-sidebar__input-text booking-sidebar__input-text--placeholder">+91 98765 43210</span>
+          </div>
+        </div>
+
+        <div class="booking-sidebar__form-group">
+          <label class="booking-sidebar__label">Email</label>
+          <div class="booking-sidebar__input">
+            <span class="booking-sidebar__input-text booking-sidebar__input-text--placeholder">john&#64;example.com</span>
+          </div>
+        </div>
+
+        <div class="booking-sidebar__form-group">
+          <label class="booking-sidebar__label">Move-in Date & Time</label>
+          <div class="booking-sidebar__input booking-sidebar__input--with-icon">
+            <svg class="booking-sidebar__input-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M6 1.5V4.5" stroke="var(--atnest-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 1.5V4.5" stroke="var(--atnest-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14.25 3H3.75C2.92157 3 2.25 3.67157 2.25 4.5V15C2.25 15.8284 2.92157 16.5 3.75 16.5H14.25C15.0784 16.5 15.75 15.8284 15.75 15V4.5C15.75 3.67157 15.0784 3 14.25 3Z" stroke="var(--atnest-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2.25 7.5H15.75" stroke="var(--atnest-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="booking-sidebar__input-text booking-sidebar__input-text--placeholder">Select date & time</span>
+          </div>
+        </div>
+
+        <div class="booking-sidebar__form-row">
+          <div class="booking-sidebar__form-group">
+            <label class="booking-sidebar__label">Sharing Type</label>
+            <div class="booking-sidebar__input booking-sidebar__input--select">
+              <span class="booking-sidebar__input-text booking-sidebar__input-text--placeholder">Single / Double...</span>
+              <svg class="booking-sidebar__dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <polyline points="6,9 12,15 18,9" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="booking-sidebar__form-group">
+            <label class="booking-sidebar__label">AC Type</label>
+            <div class="booking-sidebar__input booking-sidebar__input--select">
+              <span class="booking-sidebar__input-text booking-sidebar__input-text--placeholder">AC / Non AC...</span>
+              <svg class="booking-sidebar__dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <polyline points="6,9 12,15 18,9" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-sidebar__form-group">
+          <label class="booking-sidebar__label booking-sidebar__label--optional">Message (Optional)</label>
+          <div class="booking-sidebar__textarea">
+            <span class="booking-sidebar__input-text booking-sidebar__input-text--placeholder">I'm interested in...</span>
+          </div>
+        </div>
+
+        <button class="booking-sidebar__submit">
+          <span>Schedule Visit Now</span>
+        </button>
+
+        <div class="booking-sidebar__connect">
+          <div class="booking-sidebar__connect-divider">
+            <span>Or connect instantly</span>
+          </div>
+          <div class="booking-sidebar__connect-buttons">
+            <button class="booking-sidebar__connect-button booking-sidebar__connect-button--whatsapp">
+              <svg class="booking-sidebar__connect-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M15.4008 2.64751C13.8903 1.13399 11.8843 0.205805 9.74472 0.0303657C7.60512 -0.145074 5.47276 0.443785 3.73226 1.69072C1.99175 2.93766 0.757687 4.7606 0.252658 6.83071C-0.252371 8.90083 0.00488179 11.0818 0.978014 12.9804L0.0227632 17.5813C0.0128514 17.6271 0.0125707 17.6744 0.0219387 17.7203C0.0313067 17.7662 0.0501217 17.8097 0.0772072 17.8481C0.116886 17.9063 0.173524 17.9511 0.239559 17.9766C0.305594 18.002 0.377882 18.0069 0.446769 17.9905L4.99205 16.9217C6.90034 17.8627 9.08326 18.1015 11.1524 17.5956C13.2215 17.0897 15.0426 15.872 16.2917 14.1591C17.5407 12.4462 18.1367 10.3492 17.9736 8.24127C17.8105 6.13334 16.8988 4.15119 15.4008 2.64751ZM13.9836 13.8691C12.9385 14.9031 11.5927 15.5856 10.1358 15.8205C8.67898 16.0554 7.18456 15.8309 5.86316 15.1785L5.22962 14.8675L2.44306 15.5222L2.45131 15.4879L3.02875 12.7054L2.71858 12.0981C2.04341 10.7826 1.80523 9.28888 2.03817 7.83086C2.27111 6.37284 2.96322 5.02536 4.01535 3.98146C5.33737 2.67033 7.13016 1.93377 8.99948 1.93377C10.8688 1.93377 12.6616 2.67033 13.9836 3.98146C13.9949 3.99427 14.007 4.0063 14.0199 4.01747C15.3255 5.33199 16.0544 7.10527 16.0476 8.95072C16.0408 10.7962 15.2989 12.5641 13.9836 13.8691Z" fill="#00A63E"/>
+                <path d="M13.7364 11.8279C13.3948 12.3614 12.8553 13.0145 12.1773 13.1765C10.9894 13.4613 9.16633 13.1864 6.89781 11.088L6.86977 11.0635C4.87512 9.22869 4.35708 7.70159 4.48246 6.49039C4.55176 5.80295 5.1292 5.18098 5.6159 4.77507C5.69284 4.70991 5.78409 4.66353 5.88234 4.63962C5.98058 4.61571 6.08311 4.61493 6.18171 4.63736C6.28031 4.65979 6.37226 4.70479 6.45019 4.76878C6.52813 4.83276 6.58989 4.91395 6.63054 5.00585L7.36472 6.64261C7.41242 6.74873 7.43011 6.86575 7.41586 6.98109C7.40162 7.09643 7.35599 7.20575 7.28387 7.29731L6.91266 7.77524C6.83301 7.87393 6.78495 7.994 6.77466 8.12001C6.76437 8.24602 6.79232 8.3722 6.85492 8.48232C7.0628 8.84405 7.56104 9.37599 8.11374 9.86866C8.73407 10.4252 9.42205 10.9342 9.85761 11.1077C9.97415 11.1549 10.1023 11.1664 10.2255 11.1408C10.3487 11.1151 10.4613 11.0534 10.5489 10.9636L10.9795 10.5332C11.0626 10.4519 11.1659 10.3939 11.2789 10.3652C11.392 10.3364 11.5107 10.3379 11.6229 10.3695L13.3668 10.8605C13.463 10.8898 13.5512 10.9405 13.6246 11.0088C13.698 11.0771 13.7547 11.1611 13.7904 11.2544C13.826 11.3478 13.8397 11.448 13.8303 11.5473C13.821 11.6467 13.7888 11.7427 13.7364 11.8279Z" fill="#00A63E"/>
+              </svg>
+              <span>WhatsApp</span>
+            </button>
+            <button class="booking-sidebar__connect-button booking-sidebar__connect-button--call">
+              <svg class="booking-sidebar__connect-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="#155dfc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Call Us</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
