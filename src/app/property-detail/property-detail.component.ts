@@ -1,6 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { ApartmentCardComponent } from '../shared/apartment-card/apartment-card.component';
 
 export interface SearchFormData {
   dateRange: {
@@ -12,10 +13,20 @@ export interface SearchFormData {
   ac: boolean;
 }
 
+export interface ApartmentData {
+  type: string;
+  size: string;
+  price: string;
+  bedrooms: number;
+  bathrooms: number;
+  balconies: number;
+  isSelected?: boolean;
+}
+
 @Component({
   selector: 'app-property-detail',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ApartmentCardComponent],
   templateUrl: './property-detail.component.html',
   styleUrls: ['./property-detail.component.css']
 })
@@ -49,6 +60,36 @@ export class PropertyDetailComponent implements OnInit {
     ]
   };
 
+  apartments: ApartmentData[] = [
+    {
+      type: '1 BHK',
+      size: '800 sq.ft',
+      price: '₹5,000',
+      bedrooms: 1,
+      bathrooms: 1,
+      balconies: 1,
+      isSelected: true
+    },
+    {
+      type: '2 BHK',
+      size: '1200 sq.ft',
+      price: '₹12,000',
+      bedrooms: 2,
+      bathrooms: 2,
+      balconies: 2,
+      isSelected: false
+    },
+    {
+      type: '3 BHK',
+      size: '1800 sq.ft',
+      price: '₹20,000',
+      bedrooms: 3,
+      bathrooms: 3,
+      balconies: 3,
+      isSelected: false
+    }
+  ];
+
   sharingOptions = ['1 BHK', '2 BHK', '3 BHK', 'Studio'];
   occupancyOptions = ['1 Adult', '2 Adults', '2 Adults & 1 Child', '3 Adults'];
   acOptions = ['AC', 'Non AC'];
@@ -80,6 +121,17 @@ export class PropertyDetailComponent implements OnInit {
 
   onAcChange(value: string) {
     this.searchForm.ac = value === 'AC';
+  }
+
+  onApartmentSelected(selectedApartment: ApartmentData) {
+    // Update selection state
+    this.apartments = this.apartments.map(apt => ({
+      ...apt,
+      isSelected: apt.type === selectedApartment.type
+    }));
+    
+    console.log(`Selected ${selectedApartment.type} apartment`);
+    // Add additional selection logic here
   }
 
   goBack() {

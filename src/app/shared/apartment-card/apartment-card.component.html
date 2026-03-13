@@ -1,0 +1,156 @@
+<div class="apartment-card" [class.apartment-card--selected]="apartment.isSelected">
+  <div class="apartment-card__header">
+    <div class="apartment-card__type">
+      <div class="apartment-card__type-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" 
+                [attr.stroke]="apartment.isSelected ? 'white' : '#F26622'" 
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <polyline points="9,22 9,12 15,12 15,22" 
+                   [attr.stroke]="apartment.isSelected ? 'white' : '#F26622'" 
+                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="apartment-card__type-info">
+        <h3 class="apartment-card__type-name">{{ apartment.type }}</h3>
+        <div class="apartment-card__type-size">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <path d="M4.90039 1.83789H3.06289C2.738 1.83789 2.42642 1.96695 2.19668 2.19668C1.96695 2.42642 1.83789 2.738 1.83789 3.06289V4.90039" 
+                  [attr.stroke]="apartment.isSelected ? 'white' : 'var(--atnest-primary)'" 
+                  stroke-width="1.225" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.8633 4.90039V3.06289C12.8633 2.738 12.7342 2.42642 12.5045 2.19668C12.2748 1.96695 11.9632 1.83789 11.6383 1.83789H9.80078" 
+                  [attr.stroke]="apartment.isSelected ? 'white' : 'var(--atnest-primary)'" 
+                  stroke-width="1.225" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1.83789 9.7998V11.6373C1.83789 11.9622 1.96695 12.2738 2.19668 12.5035C2.42642 12.7332 2.738 12.8623 3.06289 12.8623H4.90039" 
+                  [attr.stroke]="apartment.isSelected ? 'white' : 'var(--atnest-primary)'" 
+                  stroke-width="1.225" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9.80078 12.8623H11.6383C11.9632 12.8623 12.2748 12.7332 12.5045 12.5035C12.7342 12.2738 12.8633 11.9622 12.8633 11.6373V9.7998" 
+                  [attr.stroke]="apartment.isSelected ? 'white' : 'var(--atnest-primary)'" 
+                  stroke-width="1.225" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>{{ apartment.size }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="apartment-card__price">
+      <div class="apartment-card__price-amount">
+        {{ apartment.price }}
+      </div>
+      <div class="apartment-card__price-period">Per Night</div>
+    </div>
+  </div>
+
+  <div class="apartment-card__divider"></div>
+
+  <div class="apartment-card__features">
+    <div class="apartment-card__feature">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+        <g clip-path="url(#clip0_593_9883)">
+          <path d="M13.3532 6.12474C13.633 7.49754 13.4336 8.92474 12.7884 10.1683C12.1432 11.4119 11.0912 12.3968 9.80779 12.9586C8.52437 13.5204 7.08714 13.6253 5.73576 13.2557C4.38439 12.8861 3.20056 12.0644 2.3817 10.9276C1.56284 9.79083 1.15844 8.40767 1.23595 7.00882C1.31345 5.60996 1.86818 4.27995 2.80761 3.24059C3.74705 2.20122 5.01441 1.51533 6.39834 1.2973C7.78228 1.07926 9.19913 1.34226 10.4126 2.04243" 
+                [attr.stroke]="apartment.isSelected ? 'white' : '#6B6B6B'" 
+                stroke-width="1.225" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5.51172 6.73769L7.34922 8.57519L13.4742 2.4502" 
+                [attr.stroke]="apartment.isSelected ? 'white' : '#6B6B6B'" 
+                stroke-width="1.225" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_593_9883">
+            <rect width="14.7" height="14.7" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+      <span>{{ apartment.bedrooms }} Bedroom{{ apartment.bedrooms > 1 ? 's' : '' }}</span>
+    </div>
+    <div class="apartment-card__feature">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+        <g clip-path="url(#clip0_593_9883)">
+          <path d="M13.3532 6.12474C13.633 7.49754 13.4336 8.92474 12.7884 10.1683C12.1432 11.4119 11.0912 12.3968 9.80779 12.9586C8.52437 13.5204 7.08714 13.6253 5.73576 13.2557C4.38439 12.8861 3.20056 12.0644 2.3817 10.9276C1.56284 9.79083 1.15844 8.40767 1.23595 7.00882C1.31345 5.60996 1.86818 4.27995 2.80761 3.24059C3.74705 2.20122 5.01441 1.51533 6.39834 1.2973C7.78228 1.07926 9.19913 1.34226 10.4126 2.04243" 
+                [attr.stroke]="apartment.isSelected ? 'white' : '#6B6B6B'" 
+                stroke-width="1.225" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5.51172 6.73769L7.34922 8.57519L13.4742 2.4502" 
+                [attr.stroke]="apartment.isSelected ? 'white' : '#6B6B6B'" 
+                stroke-width="1.225" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_593_9883">
+            <rect width="14.7" height="14.7" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+      <span>{{ apartment.bathrooms }} Bathroom{{ apartment.bathrooms > 1 ? 's' : '' }}</span>
+    </div>
+    <div class="apartment-card__feature">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+        <g clip-path="url(#clip0_593_9883)">
+          <path d="M13.3532 6.12474C13.633 7.49754 13.4336 8.92474 12.7884 10.1683C12.1432 11.4119 11.0912 12.3968 9.80779 12.9586C8.52437 13.5204 7.08714 13.6253 5.73576 13.2557C4.38439 12.8861 3.20056 12.0644 2.3817 10.9276C1.56284 9.79083 1.15844 8.40767 1.23595 7.00882C1.31345 5.60996 1.86818 4.27995 2.80761 3.24059C3.74705 2.20122 5.01441 1.51533 6.39834 1.2973C7.78228 1.07926 9.19913 1.34226 10.4126 2.04243" 
+                [attr.stroke]="apartment.isSelected ? 'white' : '#6B6B6B'" 
+                stroke-width="1.225" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5.51172 6.73769L7.34922 8.57519L13.4742 2.4502" 
+                [attr.stroke]="apartment.isSelected ? 'white' : '#6B6B6B'" 
+                stroke-width="1.225" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_593_9883">
+            <rect width="14.7" height="14.7" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+      <span>Living Area</span>
+    </div>
+    <div class="apartment-card__feature">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+        <g clip-path="url(#clip0_593_9883)">
+          <path d="M13.3532 6.12474C13.633 7.49754 13.4336 8.92474 12.7884 10.1683C12.1432 11.4119 11.0912 12.3968 9.80779 12.9586C8.52437 13.5204 7.08714 13.6253 5.73576 13.2557C4.38439 12.8861 3.20056 12.0644 2.3817 10.9276C1.56284 9.79083 1.15844 8.40767 1.23595 7.00882C1.31345 5.60996 1.86818 4.27995 2.80761 3.24059C3.74705 2.20122 5.01441 1.51533 6.39834 1.2973C7.78228 1.07926 9.19913 1.34226 10.4126 2.04243" 
+                [attr.stroke]="apartment.isSelected ? 'white' : '#6B6B6B'" 
+                stroke-width="1.225" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5.51172 6.73769L7.34922 8.57519L13.4742 2.4502" 
+                [attr.stroke]="apartment.isSelected ? 'white' : '#6B6B6B'" 
+                stroke-width="1.225" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_593_9883">
+            <rect width="14.7" height="14.7" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+      <span>{{ apartment.balconies }} Balcony{{ apartment.balconies > 1 ? 's' : '' }}</span>
+    </div>
+    <div class="apartment-card__feature">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+        <g clip-path="url(#clip0_593_9883)">
+          <path d="M13.3532 6.12474C13.633 7.49754 13.4336 8.92474 12.7884 10.1683C12.1432 11.4119 11.0912 12.3968 9.80779 12.9586C8.52437 13.5204 7.08714 13.6253 5.73576 13.2557C4.38439 12.8861 3.20056 12.0644 2.3817 10.9276C1.56284 9.79083 1.15844 8.40767 1.23595 7.00882C1.31345 5.60996 1.86818 4.27995 2.80761 3.24059C3.74705 2.20122 5.01441 1.51533 6.39834 1.2973C7.78228 1.07926 9.19913 1.34226 10.4126 2.04243" 
+                [attr.stroke]="apartment.isSelected ? 'white' : '#6B6B6B'" 
+                stroke-width="1.225" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5.51172 6.73769L7.34922 8.57519L13.4742 2.4502" 
+                [attr.stroke]="apartment.isSelected ? 'white' : '#6B6B6B'" 
+                stroke-width="1.225" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_593_9883">
+            <rect width="14.7" height="14.7" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+      <span>Fully Furnished</span>
+    </div>
+  </div>
+
+  <button class="apartment-card__select-btn" (click)="onSelectApartment()">
+    <svg *ngIf="apartment.isSelected" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+      <g clip-path="url(#clip0_593_9913)">
+        <path d="M15.2614 6.99985C15.5811 8.56876 15.3533 10.1998 14.6159 11.6211C13.8785 13.0424 12.6762 14.1679 11.2095 14.81C9.7427 15.4521 8.10014 15.5719 6.55571 15.1495C5.01129 14.7271 3.65834 13.788 2.7225 12.4888C1.78666 11.1897 1.32449 9.60891 1.41307 8.01022C1.50165 6.41152 2.13562 4.89151 3.20926 3.70367C4.2829 2.51582 5.73131 1.73195 7.31295 1.48276C8.89459 1.23358 10.5139 1.53415 11.9007 2.33435" stroke="#F26622" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6.30078 7.69981L8.40078 9.79981L15.4008 2.7998" stroke="#F26622" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_593_9913">
+          <rect width="16.8" height="16.8" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+    <span>{{ apartment.isSelected ? 'Selected' : 'Select Apartment' }}</span>
+    <svg *ngIf="!apartment.isSelected" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+      <path d="M5 12h14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12 5l7 7-7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+</div>
