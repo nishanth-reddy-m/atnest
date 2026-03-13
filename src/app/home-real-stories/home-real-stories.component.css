@@ -1052,14 +1052,53 @@
   }
 
   .real-stories__side-row {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .stat-card,
   .highlight-card,
   .verified-stays-card,
   .booking-status-card {
+    width: calc(50% - 12px);
+    flex: 0 0 calc(50% - 12px);
+  }
+
+  .verified-stays-card,
+  .booking-status-card {
+    height: auto;
+    min-height: 200px;
+  }
+
+  .verified-stays-card__header,
+  .verified-stays-card__content,
+  .booking-status-card__timestamp,
+  .booking-status-card__content {
     width: 100%;
+    max-width: 100%;
+  }
+
+  .verified-stays-card__header {
+    height: auto;
+    min-height: 48px;
+  }
+
+  .verified-stays-card__content {
+    height: auto;
+    min-height: 62px;
+  }
+
+  .booking-status-card__timestamp {
+    height: auto;
+    min-height: 20px;
+  }
+
+  .booking-status-card__content {
+    height: auto;
+    min-height: 45px;
+    flex-direction: column;
   }
 
   .real-stories__title {
@@ -1074,12 +1113,18 @@
   .review-card__quote {
     font-size: 20px;
   }
+
+  .verified-stays-card__subtitle {
+    width: 130px;
+  }
+
+  .booking-status-card__booking-info {
+    min-height: 15px;
+    min-width: 70px;
+  }
 }
 
 @media (max-width: 480px) {
-  .real-stories__inner {
-    padding: 20px;
-  }
 
   .real-stories__grid {
     gap: 12px;
