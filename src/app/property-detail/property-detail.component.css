@@ -327,7 +327,7 @@
 }
 
 .property-info__description {
-  height: 52px;
+  height: auto;
   display: flex;
   align-items: flex-start;
 }
